@@ -67,6 +67,12 @@ symlink_files "$FROM_DIR/completions/*" ~/.oh-my-zsh/completions
 echo "Installing fast-syntax-highlighting"
 git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting
 
+echo "Installing zsh-yarn-autocompletions"
+# See https://github.com/hotgazpacho/dotfiles/commit/768784be3014d3debe1338b0ca80cf982b911e02
+git clone https://github.com/g-plane/zsh-yarn-autocompletions ~/.oh-my-zsh/plugins/zsh-yarn-autocompletions
+cd ~/.oh-my-zsh/plugins/zsh-yarn-autocompletions
+./install.sh ~/.oh-my-zsh/custom/plugins/zsh-yarn-autocompletions
+
 echo "Installing zsh-autosuggestions"
 git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
@@ -80,7 +86,7 @@ bash "$SCRIPTS_DIR/brew.sh" "$ROOT_DIR"
 bash "$SCRIPTS_DIR/mac.sh" "$ROOT_DIR"
 bash "$SCRIPTS_DIR/node.sh" "$ROOT_DIR"
 # alfred has to run after "node.sh" 👇
-bash "$SCRIPTS_DIR/alfred.sh" "$ROOT_DIR"
+#bash "$SCRIPTS_DIR/alfred.sh" "$ROOT_DIR"
 bash "$SCRIPTS_DIR/cask.sh" "$ROOT_DIR"
 bash "$SCRIPTS_DIR/code.sh" "$ROOT_DIR"
 bash "$SCRIPTS_DIR/go.sh" "$ROOT_DIR"

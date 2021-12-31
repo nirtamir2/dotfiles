@@ -148,3 +148,10 @@ function extract-text-from-image() {
   rm "$TARGET_DIR/$FILENAME_WITHOUT_EXTENSION.txt";
   echo "🎉 Text copied to clipboard!";
 }
+
+# git stuff
+# for gbb alias
+function git_backup_current_branch() {
+  git branch $(git_current_branch)--$(date +%d-%m-%y--%H-%M)
+  print "$(git_current_branch)--$(date +%d-%m-%y--%H-%M)"
+}

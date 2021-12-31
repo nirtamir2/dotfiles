@@ -51,4 +51,8 @@ alias freewifi="sudo ifconfig en0 ether `openssl rand -hex 6 | sed 's/\(..\)/\1:
 # directory short cuts
 alias p='cd ~/Projects/'
 alias d='cd ~/Downloads/'
-alias sj='cd ~/Projects/stefan-judis-website/'
+#alias sj='cd ~/Projects/stefan-judis-website/'
+
+alias gbb="git_backup_current_branch"
+# log all branches by commit date in desc order
+alias gb="git branch -v --sort=-committerdate"

@@ -11,7 +11,7 @@ ROOT_DIR=$1
 
 echo "installing VSCode"
 brew uninstall --cask --force visual-studio-code && brew install --cask visual-studio-code
-brew uninstall --cask --force visual-studio-code-insiders && brew install --cask visual-studio-code-insiders
+#brew uninstall --cask --force visual-studio-code-insiders && brew install --cask visual-studio-code-insiders
 
 if [ -f ~/Library/Application\ Support/Code/User/settings.json ]; then
   echo "found old visual studio code settings. removing..."
@@ -41,20 +41,29 @@ brew install gitin
 
 brew install --cask qlmarkdown
 brew install --cask google-chrome
-brew install --cask google-chrome-canary
+#brew install --cask google-chrome-canary
 brew install --cask firefox
-brew install --cask firefox-nightly
+#brew install --cask firefox-nightly
 brew install --cask iterm2
 # install iterm utilities right away
 curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
 
-brew install --cask sigmaos
-brew install --cask zoomus
-brew install --cask spotify
+# brew install --cask sigmaos
+brew install --cask zoom
 brew install --cask ngrok
-brew install --cask dashlane
-brew install --cask bartender
-brew install --cask choosy
 brew install --cask rocket
 brew install --cask monitorcontrol
-brew install --cask screenflow
+brew install --cask raycast
+brew install --cask fig
+brew install gh
+brew install --cask stretchly
+brew install --cask webstorm
+brew install --cask shottr
+brew install --cask rectangle
+brew install --cask clipy
+brew install --cask postman
+brew install --cask kap
+brew install --cask xbar
+
+# Download linked - daily journal
+#https://github.com/lostdesign/linked
