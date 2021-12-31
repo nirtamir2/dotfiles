@@ -1,5 +1,19 @@
 # Stefan's dotfiles
 
+```
+git clone https://github.com/nirtamir2/dotfiles.git
+```
+Then, install apple dev stuff it offers.
+
+After that - install homebrew.
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+make dotfiles.sh executable by running `chmod 755 dotfiles.sh`
+
+Now run dotfiles install
+
 ## How to get started
 
 ```
