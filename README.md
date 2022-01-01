@@ -71,7 +71,7 @@ Now run chrome and login with your user. Remember to disable analytics and put c
 for missing zsh-yarn-completions
 
 
-
+make everything in command.bin executable by running `chmod 755 <filename>` for each file
 make dotfiles.sh executable by running `chmod 755 dotfiles.sh`
 
 Now run dotfiles install
