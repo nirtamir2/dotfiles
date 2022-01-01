@@ -92,6 +92,7 @@ Follow those images abd change accordingly:
 ##### stretchly:
 You need to open finder -> search for stretchly in applications. CTRL+click open because the app is not signed
 ![stretchly](manual-install/stretchly.png)
+![stretchly2](manual-install/stretchly2.png)
 
 Download https://www.nerdfonts.com/font-downloads fira-code-nerd-font for starship
 
