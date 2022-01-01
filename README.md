@@ -76,6 +76,20 @@ make dotfiles.sh executable by running `chmod 755 dotfiles.sh`
 
 Now run dotfiles install
 
+Follow those images abd change accordingly:
+##### google translate chrome extension
+![google translate chrome extension](google translate chrome extension.png)
+##### keyboard:
+![keyboard](keyboard.png)
+##### language:
+![lang-shortcut](lang-shortcut.png)
+##### raycast:
+![raycast](raycast.png)
+##### rectangle:
+![rectangle](rectangle.png)
+##### trackpad:
+![trackpad](trackpad.png)
+
 ## How to get started
 
 ```
