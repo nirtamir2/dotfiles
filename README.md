@@ -78,17 +78,17 @@ Now run dotfiles install
 
 Follow those images abd change accordingly:
 ##### google translate chrome extension
-![google translate chrome extension](google translate chrome extension.png)
+![google translate chrome extension](manual-install/google translate chrome extension.png)
 ##### keyboard:
-![keyboard](keyboard.png)
+![keyboard](manual-install/keyboard.png)
 ##### language:
-![lang-shortcut](lang-shortcut.png)
+![lang-shortcut](manual-install/lang-shortcut.png)
 ##### raycast:
-![raycast](raycast.png)
+![raycast](manual-install/raycast.png)
 ##### rectangle:
-![rectangle](rectangle.png)
+![rectangle](manual-install/rectangle.png)
 ##### trackpad:
-![trackpad](trackpad.png)
+![trackpad](manual-install/trackpad.png)
 
 Download https://www.nerdfonts.com/font-downloads fira-code-nerd-font for starship
 
