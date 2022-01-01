@@ -66,7 +66,7 @@ function lc() {
 ################################################################################
 # oh-my-zsh
 
-plugins=(git zsh-yarn-completions zsh-autosuggestions alias-tips fast-syntax-highlighting last-working-dir)
+plugins=(git zsh-yarn-completions zsh-autosuggestions alias-tips fast-syntax-highlighting last-working-dir autojump)
 ZSH_THEME=""
 
 # Customize history
@@ -169,8 +169,6 @@ export NODE_PATH="$(npm root -g)"
 # ###-end-npm-completion-###
 
 ################################################################################
-# autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 #### FIG ENV VARIABLES ####
 # Please make sure this block is at the end of this file.
