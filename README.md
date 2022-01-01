@@ -15,6 +15,16 @@ After that - install homebrew.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+Now add the 2 commands from the installation output of brew to your path.
+If everything is ok, you can start type brew.
+
+Make brew-installs.sh executable by running `chmod 755 dotfiles.sh`
+
+Now run ```./brew-installs.sh```
+
+Then run brew-installs.sh
+This will take time...
+
 make dotfiles.sh executable by running `chmod 755 dotfiles.sh`
 
 Now run dotfiles install
