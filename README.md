@@ -1,9 +1,14 @@
 # Stefan's dotfiles
 
+Type
+```
+git
+```
+Then install "Command Dine Developer Tools" in the window it shows you.
+
 ```
 git clone https://github.com/nirtamir2/dotfiles.git
 ```
-Then, install apple dev stuff it offers.
 
 After that - install homebrew.
 ```
