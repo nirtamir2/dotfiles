@@ -35,3 +35,7 @@ printf "installed volta\n"
 #
 printf "updating npm\n"
 npm i -g npm
+
+
+printf "installing pnpm"
+npm install -g pnpm
