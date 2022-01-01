@@ -1,9 +1,11 @@
 # Stefan's dotfiles
 
 Type
+
 ```
 git
 ```
+
 Then install "Command Dine Developer Tools" in the window it shows you.
 
 ```
@@ -11,22 +13,21 @@ git clone https://github.com/nirtamir2/dotfiles.git
 ```
 
 After that - install homebrew.
+
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Now add the 2 commands from the installation output of brew to your path.
-If everything is ok, you can start type brew.
+Now add the 2 commands from the installation output of brew to your path. If everything is ok, you can start type brew.
 
 Make brew-installs.sh executable by running `chmod 755 ./brew-installs.sh`
 
 Now run ```./brew-installs.sh```
 
-Then run brew-installs.sh
-This will take time...
+Then run brew-installs.sh This will take time...
 
-If you have problems install app store apps, you can install them manually.
-For example: if the command was `mas install 994933038` navigate to:
+If you have problems install app store apps, you can install them manually. For example: if the command
+was `mas install 994933038` navigate to:
 https://apps.apple.com/us/app/id<THE_ID>
 and install the app
 
@@ -35,6 +36,28 @@ Now run ```./brew-cask.sh```
 
 Now install fonts here by opening the `static/fira-code-iscript` and install them manually.
 
+Make key repeat the fastest and the delay the shortest (in ui because the command does not work).
+
+Now start raycast. In the ui - disable spotlight key - like in ![disable spotlight key](./spotlight.png).
+
+Now map raycast key to spotlight key cmd + space.
+
+Now open fig. install it. And remember to run
+
+```
+fig settings telemetry.disabled true
+```
+
+To remove tracking
+
+Now install nodejs and yarn with volta
+
+```
+curl https://get.volta.sh | bash
+```
+
+And then (when we have volta installed) run
+```volta install node yarn```
 
 
 
