@@ -90,6 +90,9 @@ Follow those images abd change accordingly:
 ##### trackpad:
 ![trackpad](trackpad.png)
 
+Download https://www.nerdfonts.com/font-downloads fira-code-nerd-font for starship
+
+
 ## How to get started
 
 ```

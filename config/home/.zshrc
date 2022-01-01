@@ -1,13 +1,13 @@
-#### FIG ENV VARIABLES ####!!!!!!!!
+#### FIG ENV VARIABLES ####
 # Please make sure this block is at the start of this file.
 [ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
 #### END FIG ENV VARIABLES ####
+export VOLTA_HOME=$HOME/.volta
 
 export PATH=:/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/.bin:$HOME/.go-modules/bin:/usr/local/opt/curl/bin:$HOME/.iterm2:$VOLTA_HOME/bin:$PATH
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-export VOLTA_HOME=$HOME/.volta
 export GOPATH=$HOME/.go-modules
 export EDITOR=code
 export LC_ALL=en_US.UTF-8
@@ -67,7 +67,7 @@ function lc() {
 # oh-my-zsh
 
 plugins=(git zsh-yarn-completions zsh-autosuggestions alias-tips fast-syntax-highlighting last-working-dir)
-ZSH_THEME="stefanjudis"
+ZSH_THEME=""
 
 # Customize history
 HIST_STAMPS="dd-mm-yyyy"
@@ -89,6 +89,8 @@ iterm2_print_user_vars() {
 
 # mcfly
 eval "$(mcfly init zsh)"
+
+eval "$(starship init zsh)"
 
 # make global modules requireable
 export NODE_PATH="$(npm root -g)"
