@@ -33,6 +33,9 @@ and install the app
 Make brew-casks.sh executable by running `chmod 755 brew-cask.sh`
 Now run ```./brew-cask.sh```
 
+Now install fonts here by opening the `static/fira-code-iscript` and install them manually.
+
+
 
 
 make dotfiles.sh executable by running `chmod 755 dotfiles.sh`

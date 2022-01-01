@@ -27,12 +27,10 @@ brew tap homebrew/cask-versions
 echo "installing custom fonts"
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
-# Fira code with fancy italics
-open "$ROOT_DIR/static/fira-code-iscript/FiraCodeiScript-Regular.ttf"
-open "$ROOT_DIR/static/fira-code-iscript/FiraCodeiScript-Bold.ttf"
-open "$ROOT_DIR/static/fira-code-iscript/FiraCodeiScript-Italic.ttf"
 
 brew install --cask font-oswald
+# I need it for brew install --cask font-ubuntu
+brew install svn
 brew install --cask font-ubuntu
 
 brew install --cask graphql-playground
