@@ -25,6 +25,11 @@ Now run ```./brew-installs.sh```
 Then run brew-installs.sh
 This will take time...
 
+If you have problems install app store apps, you can install them manually.
+For example: if the command was `mas install 994933038` navigate to:
+https://apps.apple.com/us/app/id<THE_ID>
+and install the app
+
 Make brew-casks.sh executable by running `chmod 755 brew-cask.sh`
 Now run ```./brew-cask.sh```
 

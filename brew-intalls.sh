@@ -55,8 +55,10 @@ mas install 1056643111
 mas install 1532419400
 # Hand mirror
 mas install 1502839586
-# Annotate screenshots
-mas install 994933038
+
+# Annotate screenshots. I don't know why they remove it from the app store for mac
+#mas install 994933038
+
 # Monosnap screenshots
 mas install 540348655
 # Amphetamine - Powerful keep-awake utility
