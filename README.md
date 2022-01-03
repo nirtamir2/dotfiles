@@ -93,6 +93,11 @@ Follow those images abd change accordingly:
 You need to open finder -> search for stretchly in applications. CTRL+click open because the app is not signed
 ![stretchly](manual-install/stretchly.png)
 ![stretchly2](manual-install/stretchly2.png)
+##### Shortcuts disable:
+In order to remove conflicts with webstorm IDE you need to disable some shortcuts
+Disable everything in this section of services / remove the key bindings
+![shortcuts-services](manual-install/shortcuts-services.png)
+
 
 Download https://www.nerdfonts.com/font-downloads fira-code-nerd-font for starship
 
