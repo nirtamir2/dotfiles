@@ -26,6 +26,7 @@ brew_install_or_upgrade git-delta
 brew_install_or_upgrade go
 brew_install_or_upgrade shellcheck
 brew_install_or_upgrade fzf
+brew_install_or_upgrade fx
 brew_install_or_upgrade coreutils
 brew_install_or_upgrade nektos/tap/act
 brew_install_or_upgrade docker

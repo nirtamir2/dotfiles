@@ -21,6 +21,7 @@ brew install git-delta
 brew install go
 brew install shellcheck
 brew install fzf
+brew install fx
 brew install coreutils
 brew install nektos/tap/act
 brew install docker
