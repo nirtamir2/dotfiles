@@ -127,3 +127,7 @@ Download https://www.nerdfonts.com/font-downloads fira-code-nerd-font for starsh
 ### Alfred workflows
 
 Alfred workflows are included in `.gitignore`. These will be installed in `node.sh` via npm packages.
+
+
+## TODO
+Raycast commands - better
