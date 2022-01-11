@@ -57,7 +57,7 @@ brew_install_or_upgrade mas
 # NextDNS
 #mas install 1464122853
 # Clocker
-mas install id1056643111
+mas install 1056643111
 # Meeting Bar
 mas install 1532419400
 # Hand mirror
