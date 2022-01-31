@@ -75,3 +75,14 @@ git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plu
 
 echo "Installing alias-tips"
 git clone https://github.com/djui/alias-tips.git ~/.oh-my-zsh/custom/plugins/alias-tips
+
+# *************************************
+# Other scripts
+
+bash "$SCRIPTS_DIR/brew.sh" "$ROOT_DIR"
+bash "$SCRIPTS_DIR/mac.sh" "$ROOT_DIR"
+bash "$SCRIPTS_DIR/node.sh" "$ROOT_DIR"
+bash "$SCRIPTS_DIR/cask.sh" "$ROOT_DIR"
+bash "$SCRIPTS_DIR/code.sh" "$ROOT_DIR"
+bash "$SCRIPTS_DIR/go.sh" "$ROOT_DIR"
+bash "$SCRIPTS_DIR/rust.sh" "$ROOT_DIR"
