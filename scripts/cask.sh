@@ -67,6 +67,7 @@ brew install --cask xbar
 brew install --cask obs
 brew install --cask blender
 brew install --cask authy
+brew install --cask keycastr
 
 # Download linked - daily journal
 #https://github.com/lostdesign/linked
