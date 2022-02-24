@@ -68,6 +68,9 @@ brew install --cask obs
 brew install --cask blender
 brew install --cask authy
 brew install --cask keycastr
+brew install --cask cron
+
+# Install Warp from https://www.warp.dev/
 
 # Download linked - daily journal
 #https://github.com/lostdesign/linked
