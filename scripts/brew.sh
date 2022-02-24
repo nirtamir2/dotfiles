@@ -69,6 +69,8 @@ mas install 540348655
 # Amphetamine - Powerful keep-awake utility
 mas install 937984704
 
+# Install Warp from https://www.warp.dev/
+
 # ********************************
 # paid apps
 # https://apps.apple.com/us/app/rcmd-app-switcher/id1596283165
