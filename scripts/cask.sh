@@ -69,6 +69,7 @@ brew install --cask blender
 brew install --cask authy
 brew install --cask keycastr
 brew install --cask cron
+brew install --cask vlc
 
 # Install Warp from https://www.warp.dev/
 
