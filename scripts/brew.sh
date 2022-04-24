@@ -50,22 +50,31 @@ brew install ffmpeg --with-vorbis --with-libvorbis --with-vorbis --with-theora -
 # *********************************
 # mac app store
 brew_install_or_upgrade mas
+
 # magnet window management
-#mas install 441258766
+# mas install 441258766
+
 # todoist
 #mas install 585829637
+
 # NextDNS
-#mas install 1464122853
-# Clocker
-mas install 1056643111
-# Meeting Bar
-mas install 1532419400
+# mas install 1464122853
+
+# Clocker # I use Cron instead
+#mas install 1056643111
+
+# Meeting Bar # I use Cron instead
+# mas install 1532419400
+
 # Hand mirror
 mas install 1502839586
-# Annotate screenshots
-mas install 994933038
-# Monosnap screenshots
-mas install 540348655
+
+# Annotate screenshots # I use zappy instead
+#mas install 994933038
+
+# Monosnap screenshots # I use zappy instead
+#mas install 540348655
+
 # Amphetamine - Powerful keep-awake utility
 mas install 937984704
 

@@ -51,7 +51,7 @@ curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utili
 # brew install --cask sigmaos
 brew install --cask zoom
 brew install --cask ngrok
-brew install --cask rocket
+#brew install --cask rocket # I use native macos emojis
 brew install --cask monitorcontrol
 brew install --cask raycast
 brew install --cask fig
@@ -60,9 +60,9 @@ brew install --cask stretchly
 brew install --cask webstorm
 brew install --cask shottr
 brew install --cask rectangle
-brew install --cask clipy
+#brew install --cask clipy # I use Raycast's clipboard
 brew install --cask postman
-brew install --cask kap
+#brew install --cask kap # I use zappy instead
 brew install --cask xbar
 brew install --cask obs
 brew install --cask blender
