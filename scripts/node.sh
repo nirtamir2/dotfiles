@@ -39,3 +39,10 @@ npm i -g npm
 
 printf "installing pnpm"
 npm install -g pnpm
+
+printf "installing switch-branch-cli"
+npm install -g switch-branch-cli
+
+printf "installing jiragit"
+npm install -g @nirtamir2/jiragit
+
