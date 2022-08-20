@@ -33,6 +33,7 @@ brew_install_or_upgrade docker
 brew_install_or_upgrade docker-machine
 brew_install_or_upgrade git-lfs
 brew_install_or_upgrade bluesnooze
+brew_install_or_upgrade asciinema # Record and share your terminal sessions, the simple way.
 
 # taps
 brew tap cantino/mcfly
@@ -43,6 +44,9 @@ brew_install_or_upgrade bat
 brew_install_or_upgrade exa
 brew_install_or_upgrade grex
 brew_install_or_upgrade starship
+
+# PlanetScale DB CLI
+brew_install_or_upgrade planetscale/tap/pscale
 
 # ffmpeg for quick video compression
 brew install ffmpeg --with-vorbis --with-libvorbis --with-vorbis --with-theora --with-libogg --with-libvorbis --with-gpl --with-version3 --with-nonfree --with-postproc --with-libaacplus --with-libass --with-libcelt --with-libfaac --with-libfdk-aac --with-libfreetype --with-libmp3lame --with-libopencore-amrnb --with-libopencore-amrwb --with-libopenjpeg --with-openssl --with-libopus --with-libschroedinger --with-libspeex --with-libtheora --with-libvo-aacenc --with-libvorbis --with-libvpx --with-libx264 --with-libxvid

@@ -1,5 +1,5 @@
 # Fig pre block. Keep at the top of this file.
-. "$HOME/.fig/shell/zshrc.pre.zsh"
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 export VOLTA_HOME=$HOME/.volta
 
 export PATH=:/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/.bin:$HOME/.go-modules/bin:/usr/local/opt/curl/bin:$HOME/.iterm2:$VOLTA_HOME/bin:$PATH
@@ -168,5 +168,14 @@ export NODE_PATH="$(npm root -g)"
 
 ################################################################################
 
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+
+# pnpm
+export PNPM_HOME="/Users/nirtamir/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
 # Fig post block. Keep at the bottom of this file.
-. "$HOME/.fig/shell/zshrc.post.zsh"
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"

@@ -46,3 +46,11 @@ npm install -g switch-branch-cli
 printf "installing jiragit"
 npm install -g @nirtamir2/jiragit
 
+printf "installing svg-term-cli - Share terminal sessions as razor-sharp animated SVG everywhere"
+npm install -g svg-term-cli
+
+printf "installing npkill to remove node_modules"
+npm i -g npkill
+
+printf "installing kill-port to kill open port"
+npm i -g kill-port

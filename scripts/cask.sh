@@ -71,6 +71,7 @@ brew install --cask keycastr
 brew install --cask cron
 brew install --cask vlc
 brew install --cask zappy
+brew install --cask android-file-transfer
 
 # Install Warp from https://www.warp.dev/
 
