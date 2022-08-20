@@ -34,10 +34,14 @@ brew_install_or_upgrade docker-machine
 brew_install_or_upgrade git-lfs
 brew_install_or_upgrade bluesnooze
 brew_install_or_upgrade asciinema # Record and share your terminal sessions, the simple way.
+brew_install_or_upgrade wifi-password
 
 # taps
 brew tap cantino/mcfly
 brew install mcfly
+
+brew tap mcasper/formulae
+brew install git-clean
 
 # rust based tools
 brew_install_or_upgrade bat
