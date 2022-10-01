@@ -54,3 +54,6 @@ npm i -g npkill
 
 printf "installing kill-port to kill open port"
 npm i -g kill-port
+
+printf "Installing git change date"
+npm i -g git-change-date
