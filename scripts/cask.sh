@@ -73,6 +73,8 @@ brew install --cask vlc
 brew install --cask zappy
 brew install --cask android-file-transfer
 brew install --cask jetbrains-toolbox
+brew install --cask android-studio
+brew install --cask http-toolkit
 
 # Install Warp from https://www.warp.dev/
 
