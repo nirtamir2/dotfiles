@@ -57,3 +57,8 @@ npm i -g kill-port
 
 printf "Installing git change date"
 npm i -g git-change-date
+
+# https://github.com/danvk/source-map-explorer
+printf "Installing source-map-explorer"
+npm i -g source-map-explorer
+
