@@ -54,5 +54,7 @@ alias d='cd ~/Downloads/'
 #alias sj='cd ~/Projects/github.com/stefanjudis/stefan-judis-website/'
 
 alias gbb="git_backup_current_branch"
+# Creates a commit with no-verify and revert it
+alias gcr="git_commit_reset"
 # log all branches by commit date in desc order
 alias gb="git branch -v --sort=-committerdate"
