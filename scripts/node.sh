@@ -62,3 +62,5 @@ npm i -g git-change-date
 printf "Installing source-map-explorer"
 npm i -g source-map-explorer
 
+# https://github.com/antfu/ni - Use the right package manager
+npm i -g @antfu/ni
