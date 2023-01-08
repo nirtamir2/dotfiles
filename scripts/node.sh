@@ -64,3 +64,6 @@ npm i -g source-map-explorer
 
 # https://github.com/antfu/ni - Use the right package manager
 npm i -g @antfu/ni
+
+# https://github.com/wclr/yalc better npm link - publish packages locally
+npm i -g yalc
