@@ -76,6 +76,11 @@ brew install --cask jetbrains-toolbox
 brew install --cask android-studio
 brew install --cask http-toolkit
 brew install --cask vivaldi
+
+# choosy needs this rosetta thing for some reasons
+sudo softwareupdate --install-rosetta
+brew install --cask choosy
+
 # Install Warp from https://www.warp.dev/
 
 # Download linked - daily journal
