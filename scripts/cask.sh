@@ -76,6 +76,7 @@ brew install --cask jetbrains-toolbox
 brew install --cask android-studio
 brew install --cask http-toolkit
 brew install --cask vivaldi
+brew install --cask obsidian
 
 # choosy needs this rosetta thing for some reasons
 sudo softwareupdate --install-rosetta
