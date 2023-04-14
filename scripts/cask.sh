@@ -81,6 +81,7 @@ brew install --cask obsidian
 # choosy needs this rosetta thing for some reasons
 sudo softwareupdate --install-rosetta
 brew install --cask choosy
+brew install --cask arc
 
 # Install Warp from https://www.warp.dev/
 
