@@ -89,6 +89,9 @@ mas install 1502839586
 # Amphetamine - Powerful keep-awake utility
 mas install 937984704
 
+# Keynote presentation
+mas install 409183694
+
 # Install Warp from https://www.warp.dev/
 
 # ********************************
