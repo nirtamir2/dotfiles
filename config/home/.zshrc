@@ -70,6 +70,9 @@ function lc() {
 plugins=(git zsh-yarn-completions zsh-autosuggestions alias-tips fast-syntax-highlighting last-working-dir autojump)
 ZSH_THEME=""
 
+# z command which is like autojump
+eval "$(zoxide init zsh)"
+
 # Customize history
 HIST_STAMPS="dd-mm-yyyy"
 

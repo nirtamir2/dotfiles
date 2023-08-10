@@ -19,6 +19,7 @@ chsh -s /bin/zsh
 brew_install_or_upgrade highlight
 brew_install_or_upgrade jq
 brew_install_or_upgrade autojump
+brew_install_or_upgrade zoxide
 brew_install_or_upgrade gh
 brew_install_or_upgrade curl
 brew_install_or_upgrade git
