@@ -155,3 +155,20 @@ function git_backup_current_branch() {
   git branch $(git_current_branch)--$(date +%d-%m-%y--%H-%M)
   print "$(git_current_branch)--$(date +%d-%m-%y--%H-%M)"
 }
+
+function git_commit_reset {
+  # Store the commit message in a variable, or use "wip" as the default message
+  commit_message=${1:-wip}
+
+  # Do the initial commit with --no-verify flag and commit all files
+  git commit --no-verify -am "$commit_message"
+
+  # Revert the commit with default message and avoid opening COMMIT_EDITMSG window
+  git revert --no-edit HEAD
+
+  # Revert the commit again with default message and avoid opening COMMIT_EDITMSG window
+  git revert --no-edit HEAD
+
+  # Reset the commit to take the commit files to the file system
+  git reset --mixed HEAD~1
+}

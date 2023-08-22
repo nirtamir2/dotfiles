@@ -27,9 +27,6 @@ echo ""
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 
-# Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
-defaults write com.apple.finder QuitMenuItem -bool true
-
 # echo "Finder: show all filename extensions"
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
@@ -38,9 +35,6 @@ defaults write com.apple.Finder AppleShowAllFiles -bool true
 
 # echo "only use UTF-8 in Terminal.app"
 defaults write com.apple.terminal StringEncodings -array 4
-
-# echo "expand save dialog by default"
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
 # echo "show the ~/Library folder in Finder"
 chflags nohidden ~/Library
@@ -130,6 +124,9 @@ defaults write com.apple.dock static-only -bool true; killall Dock
 
 echo "Disable CMD+space for spotlight"
 /usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist -c "Set AppleSymbolicHotKeys:64:enabled false"
+
+echo "Update Apple developer utils"
+softwareupdate --all --install --force
 
 killall SystemUIServer
 killall "Dock"

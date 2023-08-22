@@ -26,9 +26,10 @@
 [mergetool]
   keepBackup = true
 [core]
-  editor = vim
+	editor = code --wait
   excludesfile = ~/.gitignore_global
   pager = delta --plus-style="syntax #195019" --minus-style="normal #601919" --paging=always
+	autocrlf = input
 [push]
   default = current
 [help]
@@ -46,3 +47,6 @@
 [delta]
   side-by-side = true
 
+[filter "secret"]
+  clean = gsed '/^_authToken=npm_/d'
+  smudge = gsed 's/removed/_authToken=npm_/g'

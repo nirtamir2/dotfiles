@@ -71,6 +71,17 @@ brew install --cask keycastr
 brew install --cask cron
 brew install --cask vlc
 brew install --cask zappy
+brew install --cask android-file-transfer
+brew install --cask jetbrains-toolbox
+brew install --cask android-studio
+brew install --cask http-toolkit
+brew install --cask vivaldi
+brew install --cask obsidian
+
+# choosy needs this rosetta thing for some reasons
+sudo softwareupdate --install-rosetta
+brew install --cask choosy
+brew install --cask arc
 
 
 # Convert svg to favicons as seen https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
