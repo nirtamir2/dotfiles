@@ -72,6 +72,10 @@ brew install --cask cron
 brew install --cask vlc
 brew install --cask zappy
 
+
+# Convert svg to favicons as seen https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
+brew install --cask inkscape
+
 # Install Warp from https://www.warp.dev/
 
 # Download linked - daily journal

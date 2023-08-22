@@ -16,6 +16,8 @@ brew_install_or_upgrade zsh-completions
 # set it as default shell
 chsh -s /bin/zsh
 
+# Convert svg to favicons as seen https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
+brew_install_or_upgrade install imagemagick
 brew_install_or_upgrade highlight
 brew_install_or_upgrade jq
 brew_install_or_upgrade autojump
