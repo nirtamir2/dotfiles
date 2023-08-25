@@ -37,6 +37,8 @@ brew_install_or_upgrade bluesnooze
 brew_install_or_upgrade asciinema # Record and share your terminal sessions, the simple way.
 brew_install_or_upgrade wifi-password
 brew_install_or_upgrade battery  # Keep battery max charging to 80% for longevity
+# zsh-abbr when you have abbriviation like g="git", so when you write g+"space" it will replace it to git text
+brew_install_or_upgrade install olets/tap/zsh-abbr
 
 brew install watchman  # required for expo-cli installation see https://docs.expo.dev/get-started/installation/
 
