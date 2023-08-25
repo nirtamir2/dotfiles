@@ -84,6 +84,7 @@ brew install --cask obsidian
 sudo softwareupdate --install-rosetta
 brew install --cask choosy
 brew install --cask arc
+brew install --cask cursor
 #brew install --cask kdenlive # video editor
 
 # Install Warp from https://www.warp.dev/
