@@ -29,7 +29,7 @@ brew_install_or_upgrade shellcheck
 brew_install_or_upgrade fzf
 brew_install_or_upgrade fx
 brew_install_or_upgrade coreutils
-brew_install_or_upgrade nektos/tap/act
+brew_install_or_upgrade install act # run github actions locally
 brew_install_or_upgrade docker
 brew_install_or_upgrade docker-machine
 brew_install_or_upgrade git-lfs
