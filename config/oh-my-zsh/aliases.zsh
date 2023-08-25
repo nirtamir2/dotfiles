@@ -58,5 +58,7 @@ alias d='cd ~/Downloads/'
 alias gbb="git_backup_current_branch"
 # Creates a commit with no-verify and revert it
 alias gcr="git_commit_reset"
+# Pull all git repositories inside current directory
+alias gpn="git_pull_nested"
 # log all branches by commit date in desc order
 alias gb="git branch -v --sort=-committerdate"
