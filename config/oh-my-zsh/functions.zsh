@@ -193,7 +193,7 @@ function git_pull_nested {
       cd ..;
 
       # finally pull
-      git pull origin master;
+      git pull origin main;
 
       # lets get back to the CUR_DIR
       cd $CUR_DIR
