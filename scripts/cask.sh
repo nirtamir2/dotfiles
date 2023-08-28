@@ -65,6 +65,8 @@ brew install --cask postman
 #brew install --cask kap # I use zappy instead
 brew install --cask xbar
 brew install --cask obs
+brew install --cask obs-advanced-scene-switcher
+#brew install --cask virtualbox - not working in mac m1 so act (for running local github actions) won't work too
 brew install --cask blender
 brew install --cask authy
 brew install --cask keycastr
@@ -82,6 +84,8 @@ brew install --cask obsidian
 sudo softwareupdate --install-rosetta
 brew install --cask choosy
 brew install --cask arc
+brew install --cask cursor
+#brew install --cask kdenlive # video editor
 
 
 # Convert svg to favicons as seen https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs

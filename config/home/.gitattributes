@@ -1,0 +1,2 @@
+~/.npmrc filter=secret
+/Users/nirtamir/dotfiles/config/home/.npmrc filter=secret

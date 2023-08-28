@@ -180,5 +180,9 @@ export PNPM_HOME="/Users/nirtamir/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 
+#zsh-abbr
+# TOOD: configure https://zsh-abbr.olets.dev/commands.html#import-aliases & https://zsh-abbr.olets.dev/commands.html#import-git-aliases
+source /opt/homebrew/share/zsh-abbr/zsh-abbr.zsh
+
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
