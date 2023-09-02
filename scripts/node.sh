@@ -67,3 +67,6 @@ npm i -g @antfu/ni
 
 # https://github.com/wclr/yalc better npm link - publish packages locally
 npm i -g yalc
+
+# Download templates and git repositories https://github.com/unjs/giget
+npm i -g giget
