@@ -39,6 +39,12 @@ brew_install_or_upgrade wifi-password
 brew_install_or_upgrade battery  # Keep battery max charging to 80% for longevity
 # zsh-abbr when you have abbriviation like g="git", so when you write g+"space" it will replace it to git text
 brew_install_or_upgrade install olets/tap/zsh-abbr
+# custom local domain aliases for local dev servers
+brew_install_or_upgrade peterldowns/tap/localias
+# Convert svg to favicon as seen at https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
+brew_install_or_upgrade imagemagick
+# MacOS backup
+brew_install_or_upgrade mackup
 
 brew install watchman  # required for expo-cli installation see https://docs.expo.dev/get-started/installation/
 

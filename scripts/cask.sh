@@ -85,6 +85,9 @@ sudo softwareupdate --install-rosetta
 brew install --cask choosy
 brew install --cask arc
 brew install --cask cursor
+# Convert svg to favicon as seen at https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
+brew install --cask inkscape
+
 #brew install --cask kdenlive # video editor
 
 # Install Warp from https://www.warp.dev/
