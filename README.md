@@ -20,9 +20,9 @@ After that - install homebrew.
 
 Now add the 2 commands from the installation output of brew to your path. If everything is ok, you can start type brew.
 
-Make brew-installs.sh executable by running `chmod 755 ./brew-installs.sh`
+Make dotfiles executable by running `chmod 755 ./dotfiles`
 
-Now run ```./brew-installs.sh```
+Now run ```./dotfiles install```
 
 Then run brew-installs.sh This will take time...
 
