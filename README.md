@@ -33,6 +33,17 @@ It will continue installing stuff.
 
 If you are in work computer - consider running manually `scripts/work-only.sh`
 
+Now restore stuff with `mackup`.
+Run `vi ~/mackup.cfg`
+Paste 
+```
+[storage]
+engine = icloud
+directory = dotfiles
+```
+Now exit and save with `ctrl+c` and `:wq`.
+Run `mackup -r restore`
+
 Then run brew-installs.sh This will take time...
 
 If you have problems install app store apps, you can install them manually. For example: if the command
