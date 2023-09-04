@@ -180,7 +180,10 @@ export NODE_PATH="$(npm root -g)"
 
 # pnpm
 export PNPM_HOME="/Users/nirtamir/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
 # pnpm end
 
 #zsh-abbr
