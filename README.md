@@ -33,6 +33,7 @@ It will continue installing stuff.
 
 If you are in work computer - consider running manually `scripts/work-only.sh`
 
+Now login to icloud in your mac.
 Now restore stuff with `mackup`.
 Run `vi ~/mackup.cfg`
 Paste 
