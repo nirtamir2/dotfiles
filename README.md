@@ -47,6 +47,8 @@ Run `mackup -r restore`
 
 Now cd this repo and try to run `dotfiles install-zsh-symlinks-only`
 
+Run `scripts/node.sh`
+--- 
 
 Then run brew-installs.sh This will take time...
 
