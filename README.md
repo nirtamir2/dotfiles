@@ -24,6 +24,13 @@ Make dotfiles executable by running `chmod 755 ./dotfiles`
 
 Now run ```./dotfiles install```
 
+It will ask you about your Apple ID. If you migrate from another computer, it will send a notification for 2FA — so make sure to unlink your computer by navigating into appleid.apple.com and unlink this computer - so you get 2fa by text message.
+
+It may fail to install macOS Apple Store apps.
+Then it will create the software update for you.
+If this stuck in downloading software update, so you can terminate this script and do it later...
+It will continue installing stuff
+
 Then run brew-installs.sh This will take time...
 
 If you have problems install app store apps, you can install them manually. For example: if the command
