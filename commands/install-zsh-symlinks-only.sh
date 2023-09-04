@@ -5,7 +5,7 @@ ROOT_DIR=$1
 CONFIG_DIR="$ROOT_DIR/config"
 SCRIPTS_DIR="$ROOT_DIR/scripts"
 
-source "$ROOT_DIR/commands/__util.sh"
+source "$ROOT_DIR/__util.sh"
 
 echo "Running commands/install.sh..."
 #
