@@ -71,16 +71,7 @@ fig settings telemetry.disabled true
 
 To remove tracking
 
-Now install nodejs and yarn with volta
-
-```
-curl https://get.volta.sh | bash
-```
-
-And then (when we have volta installed) run
-```volta install node yarn```
-
-Now install the regullar install script - for oh-my-zsh
+Now install the regular install script - for oh-my-zsh
 now copy the zshrc file in this repo to the .zshrc file in your home directory.
 
 git clone https://github.com/chrisands/zsh-yarn-completions ~/.oh-my-zsh/custom/plugins/zsh-yarn-completions

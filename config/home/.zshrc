@@ -1,9 +1,12 @@
 # Fig pre block. Keep at the top of this file.
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
-export VOLTA_HOME=$HOME/.volta
 
-export PATH=:/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/.bin:$HOME/.go-modules/bin:/usr/local/opt/curl/bin:$HOME/.iterm2:$VOLTA_HOME/bin:$PATH
+export PATH=:/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/.bin:$HOME/.go-modules/bin:/usr/local/opt/curl/bin:$HOME/.iterm2:$PATH
 # Path to your oh-my-zsh configuration.
+
+# fnm
+eval "$(fnm env --use-on-cd)"
+
 ZSH=$HOME/.oh-my-zsh
 
 export GOPATH=$HOME/.go-modules
