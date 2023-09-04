@@ -40,7 +40,7 @@ Paste
 ```
 [storage]
 engine = icloud
-directory = dotfiles
+directory = dotfiles/backup
 ```
 Now exit and save with `ctrl+c` and `:wq`.
 Run `mackup -r restore`
@@ -108,6 +108,7 @@ Follow those images abd change accordingly:
 ![raycast](manual-install/raycast.png)
 ##### rectangle:
 ![rectangle](manual-install/rectangle.png)
+also lunch on login and 
 ##### trackpad:
 ![trackpad](manual-install/trackpad.png)
 ##### stretchly:
