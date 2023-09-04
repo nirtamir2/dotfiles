@@ -45,14 +45,7 @@ directory = dotfiles/backup
 Now exit and save with `ctrl+c` and `:wq`.
 Run `mackup -r restore`
 
-Now try to install symlinks and stuff.
-`chmod 755 dotfiles/commands/install-zsh-symlinks-only.sh`
-and run `./dotfiles/commands/install-zsh-symlinks-only.sh`
-
-
-Now try to install symlinks and stuff.
-`chmod 755 dotfiles/commands/install.sh`
-and run `./dotfiles/commands/install.sh`
+Now cd this repo and try to run `dotfiles install-zsh-symlinks-only`
 
 
 Then run brew-installs.sh This will take time...
