@@ -29,7 +29,9 @@ It will ask you about your Apple ID. If you migrate from another computer, it wi
 It may fail to install macOS Apple Store apps.
 Then it will create the software update for you.
 If this stuck in downloading software update, so you can terminate this script and do it later...
-It will continue installing stuff
+It will continue installing stuff.
+
+If you are in work computer - consider running manually `scripts/work-only.sh`
 
 Then run brew-installs.sh This will take time...
 
