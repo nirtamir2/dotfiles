@@ -79,6 +79,7 @@ brew install --cask android-studio
 brew install --cask http-toolkit
 brew install --cask vivaldi
 brew install --cask obsidian
+brew install --cask openinterminal
 
 # choosy needs this rosetta thing for some reasons
 sudo softwareupdate --install-rosetta
