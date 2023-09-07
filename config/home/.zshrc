@@ -20,6 +20,7 @@ source ~/.my-config.sh
 
 ################################################################################
 # zsh
+# make rm something/* safer
 unsetopt RM_STAR_SILENT
 setopt RM_STAR_WAIT
 # make command prefixed with space not appear in history
@@ -67,7 +68,7 @@ function lc() {
 ################################################################################
 # oh-my-zsh
 
-plugins=(git zsh-yarn-completions zsh-autosuggestions alias-tips fast-syntax-highlighting last-working-dir autojump)
+plugins=(git zsh-autosuggestions alias-tips fast-syntax-highlighting last-working-dir autojump)
 ZSH_THEME=""
 
 # z command which is like autojump
