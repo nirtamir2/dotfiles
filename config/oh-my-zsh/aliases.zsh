@@ -1,6 +1,7 @@
 # good-looking list handling
 alias obsidian="/Applications/Obsidian.app/Contents/MacOS/Obsidian"
 
+# good-looking list handling
 alias ll='exa -la --git --icons'
 
 # Hide/show all desktop icons (useful when presenting)
@@ -53,7 +54,12 @@ alias freewifi="sudo ifconfig en0 ether `openssl rand -hex 6 | sed 's/\(..\)/\1:
 # directory short cuts
 alias p='cd ~/Projects/'
 alias d='cd ~/Downloads/'
-#alias sj='cd ~/Projects/github.com/stefanjudis/stefan-judis-website/'
+alias d='cd ~/Downloads/'
+
+# suffix aliases
+# https://www.stefanjudis.com/today-i-learned/suffix-aliases-in-zsh/
+alias -s {js,json,env,gitignore,md,html,css,toml}=cat
+alias -s git="clone"
 
 alias gbb="git_backup_current_branch"
 # Creates a commit with no-verify and revert it
