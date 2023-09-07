@@ -61,7 +61,7 @@ brew install --cask webstorm
 brew install --cask shottr
 brew install --cask rectangle
 #brew install --cask clipy # I use Raycast's clipboard
-brew install --cask postman
+brew install --cask postman # https://recipeui.com/ is better and also https://hoppscotch.io/ is good tood
 #brew install --cask kap # I use zappy instead
 brew install --cask xbar
 brew install --cask obs
