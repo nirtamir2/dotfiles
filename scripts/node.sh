@@ -58,3 +58,6 @@ pnpm i -g yalc
 
 # Download templates and git repositories https://github.com/unjs/giget
 pnpm i -g giget
+
+# An interactive way to peruse your git history from the terminal https://github.com/Fakerr/git-recall
+pnpm i -g git-recall
