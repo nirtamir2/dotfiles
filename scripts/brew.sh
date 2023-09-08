@@ -57,7 +57,7 @@ brew install git-clean
 
 # rust based tools
 brew_install_or_upgrade bat
-brew_install_or_upgrade exa
+brew_install_or_upgrade eza
 brew_install_or_upgrade grex
 brew_install_or_upgrade starship
 

@@ -2,7 +2,7 @@
 alias obsidian="/Applications/Obsidian.app/Contents/MacOS/Obsidian"
 
 # good-looking list handling
-alias ll='exa -la --git --icons'
+alias ll='eza -la --git --icons'
 
 # Hide/show all desktop icons (useful when presenting)
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
