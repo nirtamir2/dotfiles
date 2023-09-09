@@ -72,6 +72,7 @@ brew install --cask http-toolkit
 brew install --cask vivaldi
 brew install --cask obsidian
 brew install --cask openinterminal
+brew install --cask bitwarden
 
 # choosy needs this rosetta thing for some reasons
 sudo softwareupdate --install-rosetta
@@ -80,7 +81,6 @@ brew install --cask arc
 brew install --cask cursor
 # Convert svg to favicon as seen at https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
 brew install --cask inkscape
-
 #brew install --cask kdenlive # video editor
 
 # Install Warp from https://www.warp.dev/
