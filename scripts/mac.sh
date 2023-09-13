@@ -96,6 +96,10 @@ defaults write com.apple.dock static-only -bool true; killall Dock
 echo "Disable CMD+space for spotlight"
 /usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist -c "Set AppleSymbolicHotKeys:64:enabled false"
 
+# https://twitter.com/danielcroe/status/1701979478447038556
+echo "Enable keyboard navigation"
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
 #echo "Always show scrollbars"
 #defaults write -g AppleShowScrollBars -string "Always"
 #
