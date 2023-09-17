@@ -46,6 +46,10 @@ brew_install_or_upgrade imagemagick
 # MacOS backup
 brew_install_or_upgrade mackup
 
+# Syncthing
+brew_install_or_upgrade syncthing
+brew services start syncthing
+
 brew install watchman  # required for expo-cli installation see https://docs.expo.dev/get-started/installation/
 
 # taps
