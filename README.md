@@ -107,6 +107,9 @@ Follow those images abd change accordingly:
 also lunch on login and 
 ##### trackpad:
 ![trackpad](manual-install/trackpad.png)
+##### Disable quick notes when mouse is in the corner
+Settings -> Desktop & Dock -> Hot Corners... remove everything
+![disable-quick-notes-via-hot-corners.png](manual-install%2Fdisable-quick-notes-via-hot-corners.png)
 ##### stretchly:
 You need to open finder -> search for stretchly in applications. CTRL+click open because the app is not signed
 ![stretchly](manual-install/stretchly.png)
