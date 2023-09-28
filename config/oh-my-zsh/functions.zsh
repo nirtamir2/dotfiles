@@ -84,6 +84,16 @@ function diff() {
   git diff --no-index $1 $2;
 }
 
+# trash-cli replacement
+function trash() {
+  echo "🗑️  Moving files to trash..."
+
+  for var in "$@"
+  do
+    mv "$var" "$HOME/.trash"
+  done
+}
+
 # overwrite mv command to also work with one argument
 function mv() {
   if [ "$#" -ne 1 ] || [ ! -f "$1" ]; then

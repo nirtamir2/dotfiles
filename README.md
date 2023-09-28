@@ -20,9 +20,35 @@ After that - install homebrew.
 
 Now add the 2 commands from the installation output of brew to your path. If everything is ok, you can start type brew.
 
-Make brew-installs.sh executable by running `chmod 755 ./brew-installs.sh`
+Make dotfiles executable by running `chmod 755 ./dotfiles`
 
-Now run ```./brew-installs.sh```
+Now run ```./dotfiles install```
+
+It will ask you about your Apple ID. If you migrate from another computer, it will send a notification for 2FA — so make sure to unlink your computer by navigating into appleid.apple.com and unlink this computer - so you get 2fa by text message.
+
+It may fail to install macOS Apple Store apps.
+Then it will create the software update for you.
+If this stuck in downloading software update, so you can terminate this script and do it later...
+It will continue installing stuff.
+
+If you are in work computer - consider running manually `scripts/work-only.sh`
+
+Now login to icloud in your mac.
+Now restore stuff with `mackup`.
+Run `vi ~/mackup.cfg`
+Paste 
+```
+[storage]
+engine = icloud
+directory = dotfiles/backup
+```
+Now exit and save with `ctrl+c` and `:wq`.
+Run `mackup -r restore`
+
+Now cd this repo and try to run `dotfiles install-zsh-symlinks-only`
+
+Run `scripts/node.sh`
+--- 
 
 Then run brew-installs.sh This will take time...
 
@@ -50,16 +76,7 @@ fig settings telemetry.disabled true
 
 To remove tracking
 
-Now install nodejs and yarn with volta
-
-```
-curl https://get.volta.sh | bash
-```
-
-And then (when we have volta installed) run
-```volta install node yarn```
-
-Now install the regullar install script - for oh-my-zsh
+Now install the regular install script - for oh-my-zsh
 now copy the zshrc file in this repo to the .zshrc file in your home directory.
 
 git clone https://github.com/chrisands/zsh-yarn-completions ~/.oh-my-zsh/custom/plugins/zsh-yarn-completions
@@ -87,8 +104,12 @@ Follow those images abd change accordingly:
 ![raycast](manual-install/raycast.png)
 ##### rectangle:
 ![rectangle](manual-install/rectangle.png)
+also lunch on login and 
 ##### trackpad:
 ![trackpad](manual-install/trackpad.png)
+##### Disable quick notes when mouse is in the corner
+Settings -> Desktop & Dock -> Hot Corners... remove everything
+![disable-quick-notes-via-hot-corners.png](manual-install%2Fdisable-quick-notes-via-hot-corners.png)
 ##### stretchly:
 You need to open finder -> search for stretchly in applications. CTRL+click open because the app is not signed
 ![stretchly](manual-install/stretchly.png)

@@ -1,9 +1,12 @@
 # Fig pre block. Keep at the top of this file.
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
-export VOLTA_HOME=$HOME/.volta
 
-export PATH=:/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/.bin:$HOME/.go-modules/bin:/usr/local/opt/curl/bin:$HOME/.iterm2:$VOLTA_HOME/bin:$PATH
+export PATH=:/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/.bin:$HOME/.go-modules/bin:/usr/local/opt/curl/bin:$HOME/.iterm2:$PATH
 # Path to your oh-my-zsh configuration.
+
+# fnm
+eval "$(fnm env --use-on-cd)"
+
 ZSH=$HOME/.oh-my-zsh
 
 export GOPATH=$HOME/.go-modules
@@ -17,6 +20,7 @@ source ~/.my-config.sh
 
 ################################################################################
 # zsh
+# make rm something/* safer
 unsetopt RM_STAR_SILENT
 setopt RM_STAR_WAIT
 # make command prefixed with space not appear in history
@@ -64,7 +68,7 @@ function lc() {
 ################################################################################
 # oh-my-zsh
 
-plugins=(git zsh-yarn-completions zsh-autosuggestions alias-tips fast-syntax-highlighting last-working-dir autojump)
+plugins=(git zsh-autosuggestions zsh-npm-scripts-autocomplete alias-tips fast-syntax-highlighting last-working-dir autojump)
 ZSH_THEME=""
 
 # z command which is like autojump
@@ -177,12 +181,15 @@ export NODE_PATH="$(npm root -g)"
 
 # pnpm
 export PNPM_HOME="/Users/nirtamir/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
 # pnpm end
 
 #zsh-abbr
 # TOOD: configure https://zsh-abbr.olets.dev/commands.html#import-aliases & https://zsh-abbr.olets.dev/commands.html#import-git-aliases
-source /opt/homebrew/share/zsh-abbr/zsh-abbr.zsh
+#source /opt/homebrew/share/zsh-abbr/zsh-abbr.zsh
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"

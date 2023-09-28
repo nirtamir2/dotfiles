@@ -41,6 +41,16 @@ brew_install_or_upgrade wifi-password
 brew_install_or_upgrade battery  # Keep battery max charging to 80% for longevity
 # zsh-abbr when you have abbriviation like g="git", so when you write g+"space" it will replace it to git text
 brew_install_or_upgrade install olets/tap/zsh-abbr
+# custom local domain aliases for local dev servers
+brew_install_or_upgrade peterldowns/tap/localias
+# Convert svg to favicon as seen at https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
+brew_install_or_upgrade imagemagick
+# MacOS backup
+brew_install_or_upgrade mackup
+
+# Syncthing
+brew_install_or_upgrade syncthing
+brew services start syncthing
 
 brew install watchman  # required for expo-cli installation see https://docs.expo.dev/get-started/installation/
 
@@ -53,7 +63,7 @@ brew install git-clean
 
 # rust based tools
 brew_install_or_upgrade bat
-brew_install_or_upgrade exa
+brew_install_or_upgrade eza
 brew_install_or_upgrade grex
 brew_install_or_upgrade starship
 
@@ -61,7 +71,7 @@ brew_install_or_upgrade starship
 brew_install_or_upgrade planetscale/tap/pscale
 
 # ffmpeg for quick video compression
-brew install ffmpeg --with-vorbis --with-libvorbis --with-vorbis --with-theora --with-libogg --with-libvorbis --with-gpl --with-version3 --with-nonfree --with-postproc --with-libaacplus --with-libass --with-libcelt --with-libfaac --with-libfdk-aac --with-libfreetype --with-libmp3lame --with-libopencore-amrnb --with-libopencore-amrwb --with-libopenjpeg --with-openssl --with-libopus --with-libschroedinger --with-libspeex --with-libtheora --with-libvo-aacenc --with-libvorbis --with-libvpx --with-libx264 --with-libxvid
+brew install ffmpeg --with-libvorbis --with-theora --with-libogg --with-libvorbis --with-gpl --with-version3 --with-nonfree --with-postproc --with-libaacplus --with-libass --with-libcelt --with-libfaac --with-libfdk-aac --with-libfreetype --with-libmp3lame --with-libopencore-amrnb --with-libopencore-amrwb --with-libopenjpeg --with-openssl --with-libopus --with-libschroedinger --with-libspeex --with-libtheora --with-libvo-aacenc --with-libvorbis --with-libvpx --with-libx264 --with-libxvid
 
 # *********************************
 # mac app store

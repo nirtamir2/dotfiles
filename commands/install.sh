@@ -67,15 +67,14 @@ symlink_files "$FROM_DIR/completions/*" ~/.oh-my-zsh/completions
 echo "Installing fast-syntax-highlighting"
 git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting
 
-echo "Installing zsh-yarn-completions"
-git clone https://github.com/chrisands/zsh-yarn-completions ~/.oh-my-zsh/custom/plugins/zsh-yarn-completions
-
 echo "Installing zsh-autosuggestions"
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 echo "Installing alias-tips"
 git clone https://github.com/djui/alias-tips.git ~/.oh-my-zsh/custom/plugins/alias-tips
 
+echo "Installing zsh-npm-scripts-autocomplete"
+git clone https://github.com/grigorii-zander/zsh-npm-scripts-autocomplete.git ~/.oh-my-zsh/custom/plugins/zsh-npm-scripts-autocomplete
 # *************************************
 # Other scripts
 
