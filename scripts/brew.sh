@@ -19,7 +19,6 @@ chsh -s /bin/zsh
 brew_install_or_upgrade highlight
 brew_install_or_upgrade jq
 brew_install_or_upgrade autojump
-brew_install_or_upgrade zoxide
 brew_install_or_upgrade gh
 brew_install_or_upgrade curl
 brew_install_or_upgrade git
@@ -29,26 +28,13 @@ brew_install_or_upgrade shellcheck
 brew_install_or_upgrade fzf
 brew_install_or_upgrade fx
 brew_install_or_upgrade coreutils
-brew_install_or_upgrade install act # run github actions locally
+brew_install_or_upgrade nektos/tap/act
 brew_install_or_upgrade docker
 brew_install_or_upgrade docker-machine
 brew_install_or_upgrade git-lfs
 brew_install_or_upgrade bluesnooze
 brew_install_or_upgrade asciinema # Record and share your terminal sessions, the simple way.
 brew_install_or_upgrade wifi-password
-brew_install_or_upgrade battery  # Keep battery max charging to 80% for longevity
-# zsh-abbr when you have abbriviation like g="git", so when you write g+"space" it will replace it to git text
-brew_install_or_upgrade install olets/tap/zsh-abbr
-# custom local domain aliases for local dev servers
-brew_install_or_upgrade peterldowns/tap/localias
-# Convert svg to favicon as seen at https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
-brew_install_or_upgrade imagemagick
-# MacOS backup
-brew_install_or_upgrade mackup
-
-# Syncthing
-brew_install_or_upgrade syncthing
-brew services start syncthing
 
 brew install watchman  # required for expo-cli installation see https://docs.expo.dev/get-started/installation/
 
@@ -61,7 +47,7 @@ brew install git-clean
 
 # rust based tools
 brew_install_or_upgrade bat
-brew_install_or_upgrade eza
+brew_install_or_upgrade exa
 brew_install_or_upgrade grex
 brew_install_or_upgrade starship
 
@@ -69,7 +55,7 @@ brew_install_or_upgrade starship
 brew_install_or_upgrade planetscale/tap/pscale
 
 # ffmpeg for quick video compression
-brew install ffmpeg --with-libvorbis --with-theora --with-libogg --with-libvorbis --with-gpl --with-version3 --with-nonfree --with-postproc --with-libaacplus --with-libass --with-libcelt --with-libfaac --with-libfdk-aac --with-libfreetype --with-libmp3lame --with-libopencore-amrnb --with-libopencore-amrwb --with-libopenjpeg --with-openssl --with-libopus --with-libschroedinger --with-libspeex --with-libtheora --with-libvo-aacenc --with-libvorbis --with-libvpx --with-libx264 --with-libxvid
+brew install ffmpeg --with-vorbis --with-libvorbis --with-vorbis --with-theora --with-libogg --with-libvorbis --with-gpl --with-version3 --with-nonfree --with-postproc --with-libaacplus --with-libass --with-libcelt --with-libfaac --with-libfdk-aac --with-libfreetype --with-libmp3lame --with-libopencore-amrnb --with-libopencore-amrwb --with-libopenjpeg --with-openssl --with-libopus --with-libschroedinger --with-libspeex --with-libtheora --with-libvo-aacenc --with-libvorbis --with-libvpx --with-libx264 --with-libxvid
 
 # *********************************
 # mac app store
@@ -102,11 +88,17 @@ mas install 1502839586
 # Amphetamine - Powerful keep-awake utility
 mas install 937984704
 
-# Keynote presentation
-mas install 409183694
+# Command X - Cut and paste files in Finder https://sindresorhus.com/command-x
+mas install 6448461551
 
 # Install Warp from https://www.warp.dev/
 
 # ********************************
 # paid apps
 # https://apps.apple.com/us/app/rcmd-app-switcher/id1596283165
+
+brew install mackup
+
+# Python stuff
+brew install pyenv
+brew install poetry

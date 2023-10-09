@@ -152,3 +152,16 @@ Alfred workflows are included in `.gitignore`. These will be installed in `node.
 
 ## TODO
 Raycast commands - better
+
+
+## Extensions config
+### Vimium chrome extension
+# Insert your preferred key mappings here.
+```
+unmapAll
+map f LinkHints.activateMode
+map F LinkHints.activateModeToOpenInNewTab
+```
+
+### Google Translate
+Open popup immediately

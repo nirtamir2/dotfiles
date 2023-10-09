@@ -11,6 +11,14 @@ ROOT_DIR=$1
 
 echo "installing VSCode"
 brew uninstall --cask --force visual-studio-code && brew install --cask visual-studio-code
+#brew uninstall --cask --force visual-studio-code-insiders && brew install --cask visual-studio-code-insiders
+
+if [ -f ~/Library/Application\ Support/Code/User/settings.json ]; then
+  echo "found old visual studio code settings. removing..."
+  rm ~/Library/Application\ Support/Code/User/settings.json
+fi
+
+ln -s "$ROOT_DIR/config/visual-studio-code-settings.json" ~/Library/Application\ Support/Code/User/settings.json
 
 brew tap homebrew/cask-versions
 
@@ -53,12 +61,10 @@ brew install --cask webstorm
 brew install --cask shottr
 brew install --cask rectangle
 #brew install --cask clipy # I use Raycast's clipboard
-brew install --cask postman # https://recipeui.com/ is better and also https://hoppscotch.io/ is good tood
+brew install --cask postman
 #brew install --cask kap # I use zappy instead
 brew install --cask xbar
 brew install --cask obs
-brew install --cask obs-advanced-scene-switcher
-#brew install --cask virtualbox - not working in mac m1 so act (for running local github actions) won't work too
 brew install --cask blender
 brew install --cask authy
 brew install --cask keycastr
@@ -82,6 +88,11 @@ brew install --cask cursor
 # Convert svg to favicon as seen at https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
 brew install --cask inkscape
 #brew install --cask kdenlive # video editor
+brew install --cask openinterminal
+brew install pyenv
+
+# Run android & apple emulators from menu bar https://github.com/okwasniewski/MiniSim
+brew install --cask minisim
 
 # Install Warp from https://www.warp.dev/
 

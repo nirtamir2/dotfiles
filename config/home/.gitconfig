@@ -1,6 +1,14 @@
 [user]
   name = Nir Tamir
-  email = nirtamir2@gmail.com
+  email = nir@youleap.com
+	signingKey = ***
+
+[includeIf "gitdir:~/dev/work/"]
+  path = ~/dev/work/.gitconfig
+
+[includeIf "gitdir:~/writing/"]
+  path = ~/dev/work/.gitconfig
+
 [color]
   diff = auto
   stats = auto
@@ -29,7 +37,6 @@
 	editor = code --wait
   excludesfile = ~/.gitignore_global
   pager = delta --plus-style="syntax #195019" --minus-style="normal #601919" --paging=always
-	autocrlf = input
 [push]
   default = current
 [help]
@@ -38,6 +45,7 @@
   diffFilter = delta --color-only
 [commit]
   verbose = true
+	gpgSign = true
 [init]
   defaultBranch = main
 [pull]
@@ -47,6 +55,5 @@
 [delta]
   side-by-side = true
 
-[filter "secret"]
-  clean = gsed '/^_authToken=npm_/d'
-  smudge = gsed 's/removed/_authToken=npm_/g'
+[gpg]
+	program = /usr/local/bin/gpg

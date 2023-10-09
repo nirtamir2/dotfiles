@@ -16,7 +16,7 @@ export ZSH_PLUGINS_ALIAS_TIPS_TEXT='❗  Use the alias: '
 
 ################################################################################
 # private
-source ~/.my-config.sh
+# source ~/.my-config.sh
 
 ################################################################################
 # zsh
@@ -193,3 +193,7 @@ esac
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+# fnm
+export PATH="/Users/nirtamir/Library/Application Support/fnm:$PATH"
+eval "`fnm env`"
