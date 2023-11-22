@@ -36,6 +36,9 @@ brew_install_or_upgrade bluesnooze
 brew_install_or_upgrade asciinema # Record and share your terminal sessions, the simple way.
 brew_install_or_upgrade wifi-password
 
+# httrack website copier https://www.httrack.com/
+brew install httrack
+
 brew install watchman  # required for expo-cli installation see https://docs.expo.dev/get-started/installation/
 
 # taps
