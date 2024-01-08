@@ -22,6 +22,8 @@ alias https-server='http-server --ssl --cert ~/.ssl/localhost.crt --key ~/.ssl/l
 # launch applications
 alias chrome='open -a "/Applications/Google Chrome.app" --args --force-renderer-accessibility'
 alias chromeDebug='chrome --remote-debugging-port=9222'
+aliases kp='kill_ports'
+aliases kp2='kill-port --port 8081,8082,8083,8084,8086'
 
 # npm stuff
 # alias ni='npm install'

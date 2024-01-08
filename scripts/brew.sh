@@ -36,8 +36,13 @@ brew_install_or_upgrade bluesnooze
 brew_install_or_upgrade asciinema # Record and share your terminal sessions, the simple way.
 brew_install_or_upgrade wifi-password
 
+# Better youtube-dl - download from youtube https://github.com/yt-dlp/yt-dlp
+brew install yt-dlp
+
 # httrack website copier https://www.httrack.com/
 brew install httrack
+
+brew install ollama # https://ollama.ai/  Ollama - Run LLM Locally (Open source) with plugin options like Raycast.
 
 brew install watchman  # required for expo-cli installation see https://docs.expo.dev/get-started/installation/
 

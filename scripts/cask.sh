@@ -91,10 +91,29 @@ brew install --cask inkscape
 brew install --cask openinterminal
 brew install pyenv
 
+# qBittorrent BitTorrent client https://github.com/qbittorrent/qBittorrent
+brew install --cask qbittorrent
+
+brew install --cask tor-browser
 # Run android & apple emulators from menu bar https://github.com/okwasniewski/MiniSim
 brew install --cask minisim
 
-# Install Warp from https://www.warp.dev/
+brew install --cask warp # Warp Terminal https://www.warp.dev/
 
-# Download linked - daily journal
-#https://github.com/lostdesign/linked
+# Rewind is a personalized AI powered by everything you’ve seen, said, or heard https://www.rewind.ai/
+brew install --cask rewind
+
+# https://dataflare.app/ # DB shell GUI
+
+brew install --cask pieces
+# https://pieces.app/ # Pieces OS - save snippets with AI support and integrations to Browser, Obsidian, VSCode and JetBrains IDE
+
+# Less used tools
+# brew install --cask krisp # https://krisp.ai take notes and remove noise from meetings, but rewind does this better so no needed
+# https://gpt4all.io/ # GPT4All - Run LLM Locally (Open source) - better to use Ollama
+# https://toolcat.app/ # misc tools
+# https://github.com/lostdesign/linked - Linked - daily journal
+brew install --cask lm-studio # lm-studio is local gpt like olama and gpt4all https://lmstudio.ai/
+
+# WhatsApp desktop
+brew install --cask whatsapp

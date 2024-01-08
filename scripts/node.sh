@@ -61,3 +61,16 @@ pnpm i -g giget
 
 # An interactive way to peruse your git history from the terminal https://github.com/Fakerr/git-recall
 pnpm i -g git-recall
+
+# Git multiple user config manager https://github.com/gauseen/gum Like nvm for git user
+pnpm i -g gauseen/gum
+
+# Terminal IDE style command line auto complete. https://github.com/microsoft/inshellisense
+pnpm i -g @microsoft/inshellisense
+
+# CLI building full-stack Next.js apps faster https://github.com/nicoalbanese/kirimase/
+pnpm i -g kirimase
+
+# Installing terminal auto-completion to pnpm
+pnpm install-completion
+
