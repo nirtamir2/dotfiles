@@ -74,3 +74,8 @@ pnpm i -g kirimase
 # Installing terminal auto-completion to pnpm
 pnpm install-completion
 
+# pnpm ls -g --depth=0
+# # pnpm i -g syncpack
+# # pnpm i -g @slidev/cli
+# # pnpm i -g license-checker
+# # pnpm i -g license-report
