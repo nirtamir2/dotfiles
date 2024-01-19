@@ -39,6 +39,9 @@ brew_install_or_upgrade wifi-password
 # Better youtube-dl - download from youtube https://github.com/yt-dlp/yt-dlp
 brew install yt-dlp
 
+# For downloading youtube videos with Raycast extensions
+brew install ffmeg
+
 # httrack website copier https://www.httrack.com/
 brew install httrack
 
@@ -85,7 +88,7 @@ brew_install_or_upgrade mas
 # mas install 1532419400
 
 # Hand mirror
-mas install 1502839586
+#mas install 1502839586 - I use Raycast "open camera"
 
 # Annotate screenshots # I use zappy instead
 #mas install 994933038
@@ -98,6 +101,9 @@ mas install 937984704
 
 # Command X - Cut and paste files in Finder https://sindresorhus.com/command-x
 mas install 6448461551
+
+# Amazing AI - Text-to-Image Stable Diffusion https://apps.apple.com/us/app/amazing-ai/id1660147028
+mas install 1660147028
 
 # Install Warp from https://www.warp.dev/
 

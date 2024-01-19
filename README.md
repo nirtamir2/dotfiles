@@ -101,10 +101,7 @@ Follow those images abd change accordingly:
 ##### language:
 ![lang-shortcut](manual-install/lang-shortcut.png)
 ##### raycast:
-![raycast](manual-install/raycast.png)
-##### rectangle:
-![rectangle](manual-install/rectangle.png)
-also lunch on login and 
+![raycast](manual-install/raycast.png) 
 ##### trackpad:
 ![trackpad](manual-install/trackpad.png)
 ##### Disable quick notes when mouse is in the corner

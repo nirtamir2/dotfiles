@@ -59,7 +59,7 @@ brew install gh
 brew install --cask stretchly
 brew install --cask webstorm
 brew install --cask shottr
-brew install --cask rectangle
+#brew install --cask rectangle # I use Raycast Window Manager
 #brew install --cask clipy # I use Raycast's clipboard
 brew install --cask postman
 #brew install --cask kap # I use zappy instead
