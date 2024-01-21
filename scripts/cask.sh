@@ -59,6 +59,12 @@ brew install gh
 brew install --cask stretchly
 brew install --cask webstorm
 brew install --cask shottr
+
+# brew install --cask rectangle # I use Raycast Window Manager
+
+# # Window management https://github.com/MrKai77/Loophttps://github.com/MrKai77/Loop window manager with cool UI
+# brew install mrkai77/cask/loop # I use Raycast's Window Manager
+
 #brew install --cask rectangle # I use Raycast Window Manager
 #brew install --cask clipy # I use Raycast's clipboard
 brew install --cask postman
