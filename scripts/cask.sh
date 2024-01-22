@@ -74,7 +74,7 @@ brew install --cask obs
 brew install --cask blender
 brew install --cask authy
 brew install --cask keycastr
-brew install --cask cron
+brew install --cask notion-calendar
 brew install --cask vlc
 brew install --cask zappy
 brew install --cask android-file-transfer
