@@ -1,6 +1,12 @@
-[user]
-  name = Nir Tamir
-  email = nirtamir2@gmail.com
+[include]
+  path = ~/home.gitconfig
+
+[includeIf "gitdir:~/dev/news-spectator/"]
+  path = ~/news-spectator.gitconfig
+
+[includeIf "gitdir:~/dev/youleap/"]
+  path = ~/youleap.gitconfig
+
 [color]
   diff = auto
   stats = auto
@@ -38,6 +44,7 @@
   diffFilter = delta --color-only
 [commit]
   verbose = true
+	gpgSign = true
 [init]
   defaultBranch = main
 [pull]
@@ -50,3 +57,7 @@
 [filter "secret"]
   clean = gsed '/^_authToken=npm_/d'
   smudge = gsed 's/removed/_authToken=npm_/g'
+
+[gpg]
+	program = /usr/local/bin/gpg
+

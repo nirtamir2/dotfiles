@@ -66,6 +66,7 @@ brew_install_or_upgrade bat
 brew_install_or_upgrade eza
 brew_install_or_upgrade grex
 brew_install_or_upgrade starship
+brew_install_or_upgrade peterldowns/tap/localias
 
 # PlanetScale DB CLI
 brew_install_or_upgrade planetscale/tap/pscale
@@ -76,6 +77,14 @@ brew install ffmpeg --with-libvorbis --with-theora --with-libogg --with-libvorbi
 # *********************************
 # mac app store
 brew_install_or_upgrade mas
+
+brew install neovim
+
+# Prerequisites for nvchad
+brew install ripgrep
+
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+
 
 # magnet window management
 # mas install 441258766
@@ -106,6 +115,9 @@ mas install 937984704
 
 # Keynote presentation
 mas install 409183694
+
+## Aiko - AI Speech-to-Text (Transcribe) https://apps.apple.com/us/app/aiko/id1672085276
+#mas install 1672085276
 
 # Install Warp from https://www.warp.dev/
 
