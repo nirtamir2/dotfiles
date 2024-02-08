@@ -12,7 +12,7 @@ ${PS1_EMOJIS[$RANDOM % $NUMBER_OF_EMOJIS]}  $THEME_DELIMITER '
 github_url() {
   # GitHub codepoint is supported by nerd fonts
   # CaskaydiaCove Nerd Font
-  GITHUB_ICON=""
+  GITHUB_ICON=""
 
   if [[ "$PWD" == *"github.com"*/*/* ]]; then
     echo "%{$fg_bold[blue]%} %3/ $GITHUB_ICON"
