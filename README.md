@@ -162,3 +162,6 @@ map F LinkHints.activateModeToOpenInNewTab
 
 ### Google Translate
 Open popup immediately
+
+### GNU Stow - manage symlinks better
+https://www.jakewiesler.com/blog/managing-dotfiles
