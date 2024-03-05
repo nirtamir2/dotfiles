@@ -56,6 +56,8 @@ brew install mcfly
 brew tap mcasper/formulae
 brew install git-clean
 
+brew install oven-sh/bun/bun
+
 # rust based tools
 brew_install_or_upgrade bat
 brew_install_or_upgrade exa
