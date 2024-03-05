@@ -123,3 +123,15 @@ brew install --cask lm-studio # lm-studio is local gpt like olama and gpt4all ht
 
 # WhatsApp desktop
 brew install --cask whatsapp
+
+# Discord
+brew install --cask discord
+
+# Voice to text
+# brew install --cask macwhisper
+
+# https://clockify.me - Time Tracking for freelancing works
+brew install --cask clockify
+
+# https://frappebooks.com/ - Accounting for freelancers and small businesses
+brew install --cask frappe-books
