@@ -197,3 +197,6 @@ esac
 # fnm
 export PATH="/Users/nirtamir/Library/Application Support/fnm:$PATH"
 eval "`fnm env`"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+PATH=~/.console-ninja/.bin:$PATH

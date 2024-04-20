@@ -68,6 +68,8 @@ Now start raycast. In the ui - disable spotlight key - like in ![disable spotlig
 
 Now map raycast key to spotlight key cmd + space.
 
+karabiner-elements - use https://ke-complex-modifications.pqrs.org/#right_option_to_hyper recipe - Right Option Key → Hyper Key (⌃⌥⇧⌘)
+
 Now open fig. install it. And remember to run
 
 ```

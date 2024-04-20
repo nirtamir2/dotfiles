@@ -67,7 +67,7 @@ brew install --cask shottr
 
 #brew install --cask rectangle # I use Raycast Window Manager
 #brew install --cask clipy # I use Raycast's clipboard
-brew install --cask postman
+brew install --cask postman # In the future try https://insomnia.rest/, https://www.usebruno.com/, https://httpie.io/, https://hoppscotch.io/
 #brew install --cask kap # I use zappy instead
 brew install --cask xbar
 brew install --cask obs
@@ -135,3 +135,6 @@ brew install --cask clockify
 
 # https://frappebooks.com/ - Accounting for freelancers and small businesses
 brew install --cask frappe-books
+
+# Hyperkey Caps Lock
+brew install --cask karabiner-elements
