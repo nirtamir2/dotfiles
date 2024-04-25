@@ -96,6 +96,8 @@ make dotfiles.sh executable by running `chmod 755 dotfiles.sh`
 Now run dotfiles install
 
 Follow those images abd change accordingly:
+##### Homerow
+[homerow](./manual-install/homerow.md)
 ##### google translate chrome extension
 ![google translate chrome extension](manual-install/google translate chrome extension.png)
 ##### keyboard:
