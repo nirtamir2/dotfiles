@@ -16,6 +16,8 @@ brew_install_or_upgrade zsh-completions
 # set it as default shell
 chsh -s /bin/zsh
 
+# Convert svg to favicons as seen https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
+brew_install_or_upgrade install imagemagick
 brew_install_or_upgrade highlight
 brew_install_or_upgrade jq
 brew_install_or_upgrade autojump
@@ -63,6 +65,7 @@ brew_install_or_upgrade bat
 brew_install_or_upgrade exa
 brew_install_or_upgrade grex
 brew_install_or_upgrade starship
+brew_install_or_upgrade peterldowns/tap/localias
 
 # PlanetScale DB CLI
 brew_install_or_upgrade planetscale/tap/pscale
@@ -73,6 +76,14 @@ brew install ffmpeg --with-vorbis --with-libvorbis --with-vorbis --with-theora -
 # *********************************
 # mac app store
 brew_install_or_upgrade mas
+
+brew install neovim
+
+# Prerequisites for nvchad
+brew install ripgrep
+
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+
 
 # magnet window management
 # mas install 441258766
@@ -106,6 +117,9 @@ mas install 6448461551
 
 # Amazing AI - Text-to-Image Stable Diffusion https://apps.apple.com/us/app/amazing-ai/id1660147028
 mas install 1660147028
+
+## Aiko - AI Speech-to-Text (Transcribe) https://apps.apple.com/us/app/aiko/id1672085276
+#mas install 1672085276
 
 # Install Warp from https://www.warp.dev/
 

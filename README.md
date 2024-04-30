@@ -123,6 +123,7 @@ Disable everything in this section of services / remove the key bindings
 
 
 Download https://www.nerdfonts.com/font-downloads fira-code-nerd-font for starship
+JetbrainsMono Nerd Font for nvchad
 
 
 ## How to get started
