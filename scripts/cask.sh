@@ -11,14 +11,6 @@ ROOT_DIR=$1
 
 echo "installing VSCode"
 brew uninstall --cask --force visual-studio-code && brew install --cask visual-studio-code
-#brew uninstall --cask --force visual-studio-code-insiders && brew install --cask visual-studio-code-insiders
-
-if [ -f ~/Library/Application\ Support/Code/User/settings.json ]; then
-  echo "found old visual studio code settings. removing..."
-  rm ~/Library/Application\ Support/Code/User/settings.json
-fi
-
-ln -s "$ROOT_DIR/config/visual-studio-code-settings.json" ~/Library/Application\ Support/Code/User/settings.json
 
 brew tap homebrew/cask-versions
 
@@ -58,6 +50,8 @@ brew install --cask fig
 brew install gh
 brew install --cask stretchly
 brew install --cask webstorm
+
+# alternative xnip: # https://apps.apple.com/il/app/xnip-screenshot-annotation/id1221250572?mt=12 # mas install 1221250572
 brew install --cask shottr
 
 # brew install --cask rectangle # I use Raycast Window Manager
@@ -138,3 +132,8 @@ brew install --cask frappe-books
 
 # Hyperkey Caps Lock
 brew install --cask karabiner-elements
+
+# Texts.com - All instant messages apps
+curl https://texts.com/i/ZzHu7YOjEwN3C3NxAg6lAiAcTFhakxxazth1eIxkOk/nir.sh | sh
+
+#iA Presenter

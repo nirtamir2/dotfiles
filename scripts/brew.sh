@@ -118,6 +118,9 @@ mas install 6448461551
 # Amazing AI - Text-to-Image Stable Diffusion https://apps.apple.com/us/app/amazing-ai/id1660147028
 mas install 1660147028
 
+# Lyne, Precision, Simplified - vertical & horizontal lines https://apps.apple.com/us/app/lyne-precision-simplified/id6478086157
+mas install 6478086157
+
 ## Aiko - AI Speech-to-Text (Transcribe) https://apps.apple.com/us/app/aiko/id1672085276
 #mas install 1672085276
 
