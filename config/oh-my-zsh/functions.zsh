@@ -211,3 +211,9 @@ function git_pull_nested {
 
   echo "\n\033[32mComplete!\033[0m\n"
 }
+
+# Killing Backend ports
+function kill_ports {
+  kill-port --port 8081,8082,8083,8084,8086
+  echo "\n\033[32mComplete!\033[0m\n"
+}

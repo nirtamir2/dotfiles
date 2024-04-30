@@ -68,6 +68,9 @@ Now start raycast. In the ui - disable spotlight key - like in ![disable spotlig
 
 Now map raycast key to spotlight key cmd + space.
 
+karabiner-elements - use https://ke-complex-modifications.pqrs.org/#right_option_to_hyper recipe - Right Option Key → Hyper Key (⌃⌥⇧⌘)
+I created a repository with my config https://github.com/nirtamir2/karabiner but I may move it here
+
 Now open fig. install it. And remember to run
 
 ```
@@ -94,6 +97,8 @@ make dotfiles.sh executable by running `chmod 755 dotfiles.sh`
 Now run dotfiles install
 
 Follow those images abd change accordingly:
+##### Homerow
+[homerow](./manual-install/homerow.md)
 ##### google translate chrome extension
 ![google translate chrome extension](manual-install/google translate chrome extension.png)
 ##### keyboard:
@@ -101,10 +106,7 @@ Follow those images abd change accordingly:
 ##### language:
 ![lang-shortcut](manual-install/lang-shortcut.png)
 ##### raycast:
-![raycast](manual-install/raycast.png)
-##### rectangle:
-![rectangle](manual-install/rectangle.png)
-also lunch on login and 
+![raycast](manual-install/raycast.png) 
 ##### trackpad:
 ![trackpad](manual-install/trackpad.png)
 ##### Disable quick notes when mouse is in the corner
@@ -153,3 +155,19 @@ Alfred workflows are included in `.gitignore`. These will be installed in `node.
 
 ## TODO
 Raycast commands - better
+
+
+## Extensions config
+### Vimium chrome extension
+# Insert your preferred key mappings here.
+```
+unmapAll
+map f LinkHints.activateMode
+map F LinkHints.activateModeToOpenInNewTab
+```
+
+### Google Translate
+Open popup immediately
+
+### GNU Stow - manage symlinks better
+https://www.jakewiesler.com/blog/managing-dotfiles

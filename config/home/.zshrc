@@ -193,3 +193,10 @@ esac
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+# fnm
+export PATH="/Users/nirtamir/Library/Application Support/fnm:$PATH"
+eval "`fnm env`"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+PATH=~/.console-ninja/.bin:$PATH
