@@ -133,7 +133,10 @@ brew install --cask frappe-books
 # Hyperkey Caps Lock
 brew install --cask karabiner-elements
 
+# Datagrip - DB IDE https://www.jetbrains.com/datagrip/
+brew install --cask datagrip
+
 # Texts.com - All instant messages apps
 curl https://texts.com/i/ZzHu7YOjEwN3C3NxAg6lAiAcTFhakxxazth1eIxkOk/nir.sh | sh
 
-#iA Presenter
+#iA Presenter https://ia.net/presenter
