@@ -199,4 +199,6 @@ export PATH="/Users/nirtamir/Library/Application Support/fnm:$PATH"
 eval "`fnm env`"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
+export PATH="/Applications/WebStorm.app/Contents/MacOS:$PATH"
+
 PATH=~/.console-ninja/.bin:$PATH

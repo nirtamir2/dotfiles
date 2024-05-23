@@ -9,7 +9,7 @@
 # @raycast.icon 🤖
 
 # Documentation:
-# @raycast.description Open dotfiles in WebStorm
+# @raycast.description Open dotfiles in Webstorm
 # @raycast.author Nir Tamir
 # @raycast.authorURL https://nirtamir.com
 

@@ -136,6 +136,9 @@ brew install --cask karabiner-elements
 # Datagrip - DB IDE https://www.jetbrains.com/datagrip/
 brew install --cask datagrip
 
+# Bunch - Bunch lets you use plain text files to perform commands and launch batches of apps and scripts.
+brew install --cask bunch
+
 # Texts.com - All instant messages apps
 curl https://texts.com/i/ZzHu7YOjEwN3C3NxAg6lAiAcTFhakxxazth1eIxkOk/nir.sh | sh
 
