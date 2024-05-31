@@ -22,6 +22,7 @@ brew_install_or_upgrade highlight
 brew_install_or_upgrade jq
 brew_install_or_upgrade autojump
 brew_install_or_upgrade gh
+gh extension install dlvhdr/gh-dash
 brew_install_or_upgrade curl
 brew_install_or_upgrade git
 brew_install_or_upgrade git-delta
