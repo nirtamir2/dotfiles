@@ -5,6 +5,9 @@ alias obsidian="/Applications/Obsidian.app/Contents/MacOS/Obsidian"
 alias ll='eza -la --git --icons'
 
 alias prd='pnpm run dev'
+alias prl='pnpm run lint'
+alias prt='pnpm run type-check'
+alias prc='pnpm run ci'
 
 
 # Hide/show all desktop icons (useful when presenting)
@@ -58,7 +61,7 @@ alias t=trash
 alias freewifi="sudo ifconfig en0 ether `openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'`"
 
 # directory short cuts
-alias p='cd ~/Projects/'
+alias p='cd ~/dev/work/'
 alias d='cd ~/Downloads/'
 
 # suffix aliases
