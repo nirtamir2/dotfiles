@@ -61,6 +61,10 @@ brew install git-clean
 
 brew install oven-sh/bun/bun
 
+# AeroSpace is an i3-like tiling window manager for macOS https://github.com/nikitabobko/AeroSpace
+#brew install --cask nikitabobko/tap/aerospace
+
+
 # rust based tools
 brew_install_or_upgrade bat
 brew_install_or_upgrade exa
@@ -125,7 +129,18 @@ mas install 6478086157
 ## Aiko - AI Speech-to-Text (Transcribe) https://apps.apple.com/us/app/aiko/id1672085276
 #mas install 1672085276
 
+# https://github.com/AugustDev/enchanted Ollama UI https://apps.apple.com/gb/app/enchanted-llm/id6474268307
+mas install 6474268307
+
 # Install Warp from https://www.warp.dev/
+
+# Multi.app alternative - pop is better
+#brew install --cask coscreen
+
+# Multi.app alternative
+brew install --cask pop
+
+brew install --cask chatgpt
 
 # ********************************
 # paid apps

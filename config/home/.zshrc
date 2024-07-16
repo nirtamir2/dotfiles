@@ -175,10 +175,6 @@ export NODE_PATH="$(npm root -g)"
 
 ################################################################################
 
-# tabtab source for packages
-# uninstall by removing these lines
-[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
-
 # pnpm
 export PNPM_HOME="/Users/nirtamir/Library/pnpm"
 case ":$PATH:" in
@@ -202,3 +198,5 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="/Applications/WebStorm.app/Contents/MacOS:$PATH"
 
 PATH=~/.console-ninja/.bin:$PATH
+
+source ~/completion-for-pnpm.zsh

@@ -6,3 +6,6 @@ docker run -d -p 3080:8080 --add-host=host.docker.internal:host-gateway -v open-
 ```
 
 Now open http://localhost:3080/
+
+### Update
+docker run --rm --volume /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --run-once open-webui

@@ -16,5 +16,5 @@
 webstorm ~/dev/news-spectator/nspec
 open "/Applications/Warp.app"
 open "/Applications/Clockify Desktop.app"
-open "/Applications/Microsoft Teams (work or school).app"
+open "/Applications/Microsoft Teams.app"
 open "/Applications/Arc.app"

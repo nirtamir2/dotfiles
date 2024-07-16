@@ -139,7 +139,19 @@ brew install --cask datagrip
 # Bunch - Bunch lets you use plain text files to perform commands and launch batches of apps and scripts.
 brew install --cask bunch
 
+# capcut - Video editing and image design platform
+brew install --cask capcut
+
 # Texts.com - All instant messages apps
 curl https://texts.com/i/ZzHu7YOjEwN3C3NxAg6lAiAcTFhakxxazth1eIxkOk/nir.sh | sh
 
+# Zed.dev faster vscode alternative that works with Ollama natively
+brew install --cask zed
+
+# Google Chrome Canary version
+brew install --cask google-chrome@canary
+
 #iA Presenter https://ia.net/presenter
+
+# local.ai - not needed
+#docker run -p 8080:8080 --name local-ai -ti localai/localai:latest-aio-cpu

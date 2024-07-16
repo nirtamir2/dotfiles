@@ -14,6 +14,7 @@ CONFIG_DIR="$ROOT_DIR/config"
 #
 printf "installed fnm"
 brew install fnm
+brew install oven-sh/bun/bun
 fnm install --lts
 fnm use lts
 
@@ -26,7 +27,8 @@ npm install -g pnpm
 
 # https://pnpm.io/completion
 printf "installing pnpm completions"
-pnpm install-completion zsh
+pnpm completion zsh > ~/completion-for-pnpm.zsh
+echo 'source ~/completion-for-pnpm.zsh' >> ~/.zshrc
 
 printf "installing switch-branch-cli"
 pnpm install -g switch-branch-cli
