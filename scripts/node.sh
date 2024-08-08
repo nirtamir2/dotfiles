@@ -73,6 +73,10 @@ pnpm i -g @microsoft/inshellisense
 # CLI building full-stack Next.js apps faster https://github.com/nicoalbanese/kirimase/
 pnpm i -g kirimase
 
+# Ask LLM directly from your terminal https://github.com/egoist/shell-ask
+# git diff | ask cm
+pnpm i -g shell-ask
+
 # Installing terminal auto-completion to pnpm
 pnpm install-completion
 
