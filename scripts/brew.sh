@@ -121,7 +121,7 @@ mas install 937984704
 mas install 6448461551
 
 # Amazing AI - Text-to-Image Stable Diffusion https://apps.apple.com/us/app/amazing-ai/id1660147028
-mas install 1660147028
+#mas install 1660147028
 
 # Lyne, Precision, Simplified - vertical & horizontal lines https://apps.apple.com/us/app/lyne-precision-simplified/id6478086157
 mas install 6478086157
@@ -151,3 +151,7 @@ brew install mackup
 # Python stuff
 brew install pyenv
 brew install poetry
+
+# Screenpipe - like Rewind but open source https://github.com/louis030195/screen-pipe
+brew tap louis030195/screen-pipe https://github.com/louis030195/screen-pipe.git
+brew install screenpipe
