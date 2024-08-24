@@ -44,6 +44,7 @@ alias kp2='kill-port --port 8081,8082,8083,8084,8086'
 # alias nr='npm run'
 # alias npm-reset='rm -rf node_modules && rm -f package-lock.json && npm install && npx node-notifier-cli -t "Done" -m "npm modules reinstalled" -s Glass -i https://cdn.rawgit.com/npm/logos/31945b5c/npm%20square/n-64.png'
 # alias dnm='rm -rf node_modules && npm i'
+alias scripts="cat package.json | jq --color-output '.scripts'"
 
 alias gcop='git co -p'
 alias gap='git add -p'
