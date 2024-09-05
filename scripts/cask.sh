@@ -130,8 +130,11 @@ brew install --cask clockify
 # https://frappebooks.com/ - Accounting for freelancers and small businesses
 brew install --cask frappe-books
 
-# Hyperkey Caps Lock
-brew install --cask karabiner-elements
+# Hyperkey Caps Lock - I moved to https://hyperkey.app/
+# brew install --cask karabiner-elements
+
+# Map right option to ctrl+cmd+shift+option ⭐ hyperkey
+brew install --cask hyperkey
 
 # Datagrip - DB IDE https://www.jetbrains.com/datagrip/
 brew install --cask datagrip
