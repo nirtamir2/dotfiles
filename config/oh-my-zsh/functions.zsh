@@ -212,6 +212,10 @@ function git_pull_nested {
   echo "\n\033[32mComplete!\033[0m\n"
 }
 
+function git_delete_all_other_branches {
+    git branch -D `git branch | grep -v \* | xargs`
+}
+
 # Killing Backend ports
 function kill_ports {
   kill-port --port 8081,8082,8083,8084,8086
