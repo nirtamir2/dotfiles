@@ -78,4 +78,4 @@ alias gpn="git_pull_nested"
 # log all branches by commit date in desc order
 alias gb="git branch -v --sort=-committerdate"
 # Switch branch
-alias sb=git branch -v --sort=-committerdate | grep -v '^\*' | fzf --height=20% --reverse --info=inline | cut -d ' ' -f3 | xargs git switch
+alias sb="git branch -v --sort=-committerdate | grep -v '^\*' | fzf --height=20% --reverse --info=inline | cut -d ' ' -f3 | xargs git switch"
