@@ -154,6 +154,10 @@ brew install --cask zed
 # Google Chrome Canary version
 brew install --cask google-chrome@canary
 
+# AltTab - Windows alt-tab on macOS https://alt-tab-macos.netlify.app/
+brew install --cask alt-tab
+
+
 #iA Presenter https://ia.net/presenter
 
 # local.ai - not needed
