@@ -157,7 +157,7 @@ brew install --cask google-chrome@canary
 # AltTab - Windows alt-tab on macOS https://alt-tab-macos.netlify.app/
 brew install --cask alt-tab
 
-# Prevent apple music to open
+# Prevent apple music to open.
 brew install --cask notunes
 
 #iA Presenter https://ia.net/presenter
