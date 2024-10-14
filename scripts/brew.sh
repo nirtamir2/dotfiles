@@ -155,3 +155,8 @@ brew install poetry
 # Screenpipe - like Rewind but open source https://github.com/louis030195/screen-pipe
 brew tap louis030195/screen-pipe https://github.com/louis030195/screen-pipe.git
 brew install screenpipe
+
+# A virtual monitor for screen sharing
+# Useful if you have wide screen and you want to share it with regular screens
+# https://github.com/Stengo/DeskPad
+# brew install deskpad
