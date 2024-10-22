@@ -63,7 +63,8 @@ alias freewifi="sudo ifconfig en0 ether `openssl rand -hex 6 | sed 's/\(..\)/\1:
 
 # directory short cuts
 alias p='cd ~/dev/work/'
-alias d='cd ~/Downloads/'
+
+alias d='pnpm run dev'
 
 # suffix aliases
 # https://www.stefanjudis.com/today-i-learned/suffix-aliases-in-zsh/
