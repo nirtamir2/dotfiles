@@ -13,6 +13,14 @@
   branch = auto
   ui = auto
 [alias]
+  ; Stuff from https://github.com/ahmetsait/toolgit
+  graph = log --graph --pretty=format:'%C(red)%h%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(bold blue)<%an>%C(reset)%n' --abbrev-commit --date=relative --branches
+  amend = commit --amend --no-edit
+  gc-all = -c gc.reflogExpire=0 -c gc.reflogExpireUnreachable=0 -c gc.rerereresolved=0 -c gc.rerereunresolved=0 -c gc.pruneExpire=now gc
+  dir = rev-parse --git-dir
+  root = rev-parse --show-toplevel
+
+
   lg = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset - %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   player = shortlog -sn
   d = diff
