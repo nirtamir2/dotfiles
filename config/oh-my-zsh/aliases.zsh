@@ -62,7 +62,9 @@ alias t=trash
 alias freewifi="sudo ifconfig en0 ether `openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'`"
 
 # directory short cuts
-alias p='cd ~/dev/work/'
+alias pp='cd ~/dev/work/'
+
+alias p='pnpm'
 
 alias d='pnpm run dev'
 
