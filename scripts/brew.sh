@@ -160,3 +160,10 @@ brew install screenpipe
 # Useful if you have wide screen and you want to share it with regular screens
 # https://github.com/Stengo/DeskPad
 # brew install deskpad
+
+# lumen is a command-line tool that uses AI to generate commit messages,
+# summarise git diffs or past commits, and more without requiring an API key.
+# https://github.com/jnsahaj/lumen
+brew tap jnsahaj/lumen
+brew install --formula lumen
+
