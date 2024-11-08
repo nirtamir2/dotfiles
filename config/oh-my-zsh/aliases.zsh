@@ -75,7 +75,9 @@ alias -s git="clone"
 
 alias gbb="git_backup_current_branch"
 # Creates a commit with no-verify and revert it
-alias gcr="git_commit_reset"
+alias gcr="git_commit_reset_lumen"
+# Commit all changes with a WIP message, revert twice, and reset to keep changes in the working directory
+alias wip="git_commit_wip_lumen"
 # Pull all git repositories inside current directory
 alias gpn="git_pull_nested"
 # log all branches by commit date in desc order
