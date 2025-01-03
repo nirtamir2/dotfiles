@@ -167,3 +167,6 @@ brew install screenpipe
 brew tap jnsahaj/lumen
 brew install --formula lumen
 
+# Terminal
+brew install ghostty
+
