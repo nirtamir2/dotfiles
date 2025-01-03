@@ -228,6 +228,10 @@ function git_commit_wip_lumen {
   git commit --no-verify -m "WIP - $commit_message"
 }
 
+# Navigate to the root of the git repository
+function gitroot() {
+  cd $(git rev-parse --show-toplevel)
+}
 
 # for gpn alias
 # https://gist.github.com/douglas/1287372
