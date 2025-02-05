@@ -130,12 +130,6 @@ brew install --cask clockify
 # https://frappebooks.com/ - Accounting for freelancers and small businesses
 brew install --cask frappe-books
 
-# Hyperkey Caps Lock - I moved to https://hyperkey.app/
-# brew install --cask karabiner-elements
-
-# Map right option to ctrl+cmd+shift+option ⭐ hyperkey
-brew install --cask hyperkey
-
 # Datagrip - DB IDE https://www.jetbrains.com/datagrip/
 brew install --cask datagrip
 
@@ -159,6 +153,16 @@ brew install --cask alt-tab
 
 # Prevent apple music to open.
 brew install --cask notunes
+
+# Zen browser - firefox engine + arc look
+brew install --cask zen-browser
+
+# Orion browser - webkit engine (safari) + arc look + chrome & firefox extensions
+brew install --cask orion
+
+# aerospace is a tiling window manager for macOS
+#brew install --cask nikitabobko/tap/aerospace
+
 
 #iA Presenter https://ia.net/presenter
 
