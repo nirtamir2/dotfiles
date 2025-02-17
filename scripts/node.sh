@@ -45,6 +45,11 @@ pnpm i -g npkill
 printf "installing kill-port to kill open port"
 pnpm i -g kill-port
 
+printf "installing degit for straightforward project scaffolding"
+# degit user/repo/subdirectory
+# https://github.com/Rich-Harris/degit
+npm i -g degit
+
 printf "Installing git change date"
 pnpm i -g git-change-date
 
