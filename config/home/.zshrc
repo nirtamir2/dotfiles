@@ -200,3 +200,6 @@ export PATH="/Applications/WebStorm.app/Contents/MacOS:$PATH"
 PATH=~/.console-ninja/.bin:$PATH
 
 source ~/completion-for-pnpm.zsh
+
+# opencode
+export PATH=/Users/nirtamir/.opencode/bin:$PATH

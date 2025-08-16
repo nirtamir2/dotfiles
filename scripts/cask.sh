@@ -163,6 +163,7 @@ brew install --cask orion
 # aerospace is a tiling window manager for macOS
 #brew install --cask nikitabobko/tap/aerospace
 
+curl -fsSL https://opencode.ai/install | zsh
 
 #iA Presenter https://ia.net/presenter
 

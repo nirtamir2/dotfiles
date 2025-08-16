@@ -13,7 +13,7 @@
 # @raycast.author Nir Tamir
 # @raycast.authorURL https://nirtamir.com
 
-webstorm ~/dev/news-spectator/nspec
+code ~/dev/news-spectator/nspec
 open "/Applications/Warp.app"
 open "/Applications/Clockify Desktop.app"
 open "/Applications/Microsoft Teams.app"

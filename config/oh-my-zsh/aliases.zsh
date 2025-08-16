@@ -9,6 +9,7 @@ alias prl='pnpm run lint'
 alias prt='pnpm run type-check'
 alias prc='pnpm run ci'
 
+alias ide="code"
 
 # Hide/show all desktop icons (useful when presenting)
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
@@ -28,6 +29,8 @@ alias https-server='http-server --ssl --cert ~/.ssl/localhost.crt --key ~/.ssl/l
 # launch applications
 alias chrome='open -a "/Applications/Google Chrome.app" --args --force-renderer-accessibility'
 alias chromeDebug='chrome --remote-debugging-port=9222'
+
+alias ss='git-smart-squash'
 
 alias kp='kill_ports'
 alias kp2='kill-port --port 8081,8082,8083,8084,8086'
@@ -84,3 +87,5 @@ alias gpn="git_pull_nested"
 alias gb="git branch -v --sort=-committerdate"
 # Switch branch
 alias sb="git branch -v --sort=-committerdate | grep -v '^\*' | fzf --height=20% --reverse --info=inline | cut -d ' ' -f3 | xargs git switch"
+# Run script
+alias rs='jq -r ".scripts | keys[]" package.json | fzf --height=20% --reverse --info=inline | xargs -r pnpm run'

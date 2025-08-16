@@ -13,6 +13,83 @@ function grep-folder() {
   ll | grep $1
 }
 
+# Project scripts
+ps() {
+  git_root=$(git rev-parse --show-toplevel 2>/dev/null || true)
+  if [ -n "$git_root" ]; then
+    git_root_abs=$(cd "$git_root" && pwd -P)
+    repo_name=$(basename "$git_root_abs")
+  else
+    git_root_abs=""
+    repo_name=""
+  fi
+
+  cwd_abs=$(pwd -P)
+  entries=$(mktemp)
+
+  # emit: rank, display, dimmed_cmd, script, dir, kind
+  emit() {
+    local pkg="$1" dir="$2" kind="$3" ws="$4" rank="$5"
+    jq -r --arg kind "$kind" --arg dir "$dir" --arg ws "$ws" --arg rank "$rank" '
+      (.scripts // {}) | to_entries[] |
+      [
+        $rank,
+        (if $kind == "ROOT"
+         then "\u001b[35m\(.key)\u001b[0m"
+         else "\u001b[36m\($ws)\u001b[0m:\u001b[33m\(.key)\u001b[0m"
+         end),
+        "\u001b[2m\(.value)\u001b[0m",
+        .key,
+        $dir,
+        $kind
+      ] | @tsv
+    ' "$pkg" >> "$entries"
+  }
+
+  # Current dir
+  if [ -f "$cwd_abs/package.json" ]; then
+    if [ -n "$git_root_abs" ] && [ "$cwd_abs" = "$git_root_abs" ]; then
+      emit "$cwd_abs/package.json" "$git_root_abs" "ROOT" "" "0"
+    else
+      emit "$cwd_abs/package.json" "$cwd_abs" "WS" "$(basename "$cwd_abs")" "0"
+    fi
+  fi
+
+  # Root (if different)
+  if [ -n "$git_root_abs" ] && [ "$git_root_abs" != "$cwd_abs" ] && [ -f "$git_root_abs/package.json" ]; then
+    emit "$git_root_abs/package.json" "$git_root_abs" "ROOT" "" "1"
+  fi
+
+  # Others
+  base_dir="${git_root_abs:-$cwd_abs}"
+  while IFS= read -r -d '' pkg; do
+    dir_abs=$(cd "$(dirname "$pkg")" && pwd -P)
+    if [ "$dir_abs" = "$cwd_abs" ] || { [ -n "$git_root_abs" ] && [ "$dir_abs" = "$git_root_abs" ]; }; then
+      continue
+    fi
+    emit "$pkg" "$dir_abs" "WS" "$(basename "$dir_abs")" "1"
+  done < <(find "$base_dir" -type f -name package.json -not -path "*/node_modules/*" -print0)
+
+  # Show in fzf without paths
+  {
+    grep -E '^0\t' "$entries"
+    grep -Ev '^0\t' "$entries"
+  } | cut -f2-3 \
+    | fzf --ansi --with-nth=1,2 --delimiter=$'\t' --height=20% --reverse --info=inline --no-sort \
+    --bind 'enter:execute-silent(
+      script=$(grep -F "$(echo {})" "'"$entries"'" | head -n1 | cut -f4);
+      dir=$(grep -F "$(echo {})" "'"$entries"'" | head -n1 | cut -f5);
+      kind=$(grep -F "$(echo {})" "'"$entries"'" | head -n1 | cut -f6);
+      if [ "$kind" = "ROOT" ] && [ -n "'"$git_root_abs"'" ]; then
+        cd "'"$git_root_abs"'" && pnpm run "$script";
+      else
+        cd "$dir" && pnpm run "$script";
+      fi
+    )'
+
+  rm -f "$entries"
+}
+
 function prepare_video() {
   if ! [ $# -eq 2 ]; then
     echo "Wrong parameter usage: \n $ prepare_video <inputFile> <outputFileBase>"

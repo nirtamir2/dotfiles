@@ -13,5 +13,5 @@
 # @raycast.author Nir Tamir
 # @raycast.authorURL https://nirtamir.com
 
-webstorm ~/dotfiles
+code ~/dotfiles
 

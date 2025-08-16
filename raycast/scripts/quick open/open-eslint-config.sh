@@ -13,5 +13,5 @@
 # @raycast.author Nir Tamir
 # @raycast.authorURL https://nirtamir.com
 
-webstorm ~/dev/work/eslint-config
+code ~/dev/work/eslint-config
 

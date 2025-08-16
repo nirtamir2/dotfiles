@@ -1,3 +1,5 @@
 .DS_Store
 config/Alfred.alfredpreferences/workflows
 .my-config.sh
+cursor/
+.opencode/
