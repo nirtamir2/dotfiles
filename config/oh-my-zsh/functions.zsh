@@ -3,7 +3,7 @@ function f() {
   find . -name "$1"
 }
 
-cd(){
+function cd(){
   [[ -t 1 && $((RANDOM%20)) -eq 0 ]] && echo " -> 🐶 \"woof\""; builtin cd "$@";
 }
 
@@ -13,82 +13,74 @@ function grep-folder() {
   ll | grep $1
 }
 
-# Project scripts
-ps() {
-  git_root=$(git rev-parse --show-toplevel 2>/dev/null || true)
-  if [ -n "$git_root" ]; then
-    git_root_abs=$(cd "$git_root" && pwd -P)
-    repo_name=$(basename "$git_root_abs")
-  else
-    git_root_abs=""
-    repo_name=""
-  fi
-
-  cwd_abs=$(pwd -P)
-  entries=$(mktemp)
-
-  # emit: rank, display, dimmed_cmd, script, dir, kind
-  emit() {
-    local pkg="$1" dir="$2" kind="$3" ws="$4" rank="$5"
-    jq -r --arg kind "$kind" --arg dir "$dir" --arg ws "$ws" --arg rank "$rank" '
-      (.scripts // {}) | to_entries[] |
-      [
-        $rank,
-        (if $kind == "ROOT"
-         then "\u001b[35m\(.key)\u001b[0m"
-         else "\u001b[36m\($ws)\u001b[0m:\u001b[33m\(.key)\u001b[0m"
-         end),
-        "\u001b[2m\(.value)\u001b[0m",
-        .key,
-        $dir,
-        $kind
-      ] | @tsv
-    ' "$pkg" >> "$entries"
-  }
-
-  # Current dir
-  if [ -f "$cwd_abs/package.json" ]; then
-    if [ -n "$git_root_abs" ] && [ "$cwd_abs" = "$git_root_abs" ]; then
-      emit "$cwd_abs/package.json" "$git_root_abs" "ROOT" "" "0"
-    else
-      emit "$cwd_abs/package.json" "$cwd_abs" "WS" "$(basename "$cwd_abs")" "0"
-    fi
-  fi
-
-  # Root (if different)
-  if [ -n "$git_root_abs" ] && [ "$git_root_abs" != "$cwd_abs" ] && [ -f "$git_root_abs/package.json" ]; then
-    emit "$git_root_abs/package.json" "$git_root_abs" "ROOT" "" "1"
-  fi
-
-  # Others
-  base_dir="${git_root_abs:-$cwd_abs}"
-  while IFS= read -r -d '' pkg; do
-    dir_abs=$(cd "$(dirname "$pkg")" && pwd -P)
-    if [ "$dir_abs" = "$cwd_abs" ] || { [ -n "$git_root_abs" ] && [ "$dir_abs" = "$git_root_abs" ]; }; then
-      continue
-    fi
-    emit "$pkg" "$dir_abs" "WS" "$(basename "$dir_abs")" "1"
-  done < <(find "$base_dir" -type f -name package.json -not -path "*/node_modules/*" -print0)
-
-  # Show in fzf without paths
-  {
-    grep -E '^0\t' "$entries"
-    grep -Ev '^0\t' "$entries"
-  } | cut -f2-3 \
-    | fzf --ansi --with-nth=1,2 --delimiter=$'\t' --height=20% --reverse --info=inline --no-sort \
-    --bind 'enter:execute-silent(
-      script=$(grep -F "$(echo {})" "'"$entries"'" | head -n1 | cut -f4);
-      dir=$(grep -F "$(echo {})" "'"$entries"'" | head -n1 | cut -f5);
-      kind=$(grep -F "$(echo {})" "'"$entries"'" | head -n1 | cut -f6);
-      if [ "$kind" = "ROOT" ] && [ -n "'"$git_root_abs"'" ]; then
-        cd "'"$git_root_abs"'" && pnpm run "$script";
-      else
-        cd "$dir" && pnpm run "$script";
-      fi
-    )'
-
-  rm -f "$entries"
+function cdgr() {
+  cd $(gitroot)
 }
+
+function rs() {
+  if [ ! -f "package.json" ]; then
+    echo "No package.json found in current directory"
+    return 1
+  fi
+  
+  jq -r '.scripts // {} | to_entries[] | "\u001b[37m\(.key)\u001b[0m\t\(.key)\t\(.value)"' package.json | \
+  fzf --height=20% --reverse --info=inline --ansi \
+      --with-nth=1 \
+      --delimiter=$'\t' \
+      --preview='echo {3}' \
+      --preview-window=down:1:wrap | \
+  cut -f2 | \
+  xargs -r pnpm run
+}
+
+# Project scripts
+function ps() {
+  # Get git root or use current directory
+  git_root=$(git rev-parse --show-toplevel 2>/dev/null || pwd)
+  
+  # Color array for different prefixes
+  colors=(31 32 33 34 35 36 91 92 93 94 95 96)  # red, green, yellow, blue, magenta, cyan, bright variants
+  
+  # Find all package.json files and extract scripts with their locations
+  find "$git_root" -name "package.json" -not -path "*/node_modules/*" -type f 2>/dev/null | \
+  while IFS= read -r pkg; do
+    dir=$(dirname "$pkg")
+    dir_name=$(basename "$dir")
+    
+    # Check if git root to show as "root" instead of directory name
+    if [ "$dir" = "$git_root" ]; then
+      prefix="root"
+      color_code="35"  # magenta for root
+    else
+      prefix="$dir_name"
+      # Generate consistent color for each prefix using hash
+      hash=$(echo "$prefix" | cksum | cut -d' ' -f1)
+      color_index=$((hash % ${#colors[@]}))
+      color_code="${colors[$color_index]}"
+    fi
+    
+    # Extract scripts and format them with colors
+    jq -r --arg prefix "$prefix" --arg dir "$dir" --arg color "$color_code" '
+      .scripts // {} | 
+      to_entries[] | 
+      "\u001b[\($color)m\($prefix)\u001b[0m:\u001b[37m\(.key)\u001b[0m\t\(.key)\t\(.value)\t\($dir)"
+    ' "$pkg" 2>/dev/null
+  done | \
+  fzf --height=20% --reverse --info=inline --ansi \
+      --with-nth=1 \
+      --delimiter=$'\t' \
+      --preview='echo {3}' \
+      --preview-window=down:1:wrap | \
+  {
+    IFS=$'\t' read -r display script_name script_cmd script_dir
+    if [ -n "$script_name" ] && [ -n "$script_dir" ]; then
+      echo "Running '$script_name' in $script_dir"
+      cd "$script_dir" && pnpm run "$script_name"
+    fi
+  }
+}
+
+
 
 function prepare_video() {
   if ! [ $# -eq 2 ]; then

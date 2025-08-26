@@ -87,5 +87,3 @@ alias gpn="git_pull_nested"
 alias gb="git branch -v --sort=-committerdate"
 # Switch branch
 alias sb="git branch -v --sort=-committerdate | grep -v '^\*' | fzf --height=20% --reverse --info=inline | cut -d ' ' -f3 | xargs git switch"
-# Run script
-alias rs='jq -r ".scripts | keys[]" package.json | fzf --height=20% --reverse --info=inline | xargs -r pnpm run'
