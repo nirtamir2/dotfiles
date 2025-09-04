@@ -175,3 +175,11 @@ brew install opencode-ai/tap/opencode
 
 # A tool for managing macOS defaults declaratively via YAML files. https://github.com/dsully/macos-defaults
 brew install dsully/tap/macos-defaults
+
+# GNU Stow is a symlink farm manager https://www.gnu.org/software/stow/
+brew install stow
+
+# A lightweight window border system for macOS - https://github.com/FelixKratz/JankyBorders
+brew tap FelixKratz/formulae
+brew install borders
+brew services start borders
