@@ -10,34 +10,34 @@ source "$ROOT_DIR/commands/__util.sh"
 
 brew -v >/dev/null 2>&1 || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-brew_install_or_upgrade zsh
-brew_install_or_upgrade zsh-completions
+brew install zsh
+brew install zsh-completions
 
 # set it as default shell
 chsh -s /bin/zsh
 
 # Convert svg to favicons as seen https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
-brew_install_or_upgrade install imagemagick
-brew_install_or_upgrade highlight
-brew_install_or_upgrade jq
-brew_install_or_upgrade autojump
-brew_install_or_upgrade gh
+brew install imagemagick
+brew install highlight
+brew install jq
+brew install autojump
+brew install gh
 gh extension install dlvhdr/gh-dash
-brew_install_or_upgrade curl
-brew_install_or_upgrade git
-brew_install_or_upgrade git-delta
-brew_install_or_upgrade go
-brew_install_or_upgrade shellcheck
-brew_install_or_upgrade fzf
-brew_install_or_upgrade fx
-brew_install_or_upgrade coreutils
-brew_install_or_upgrade nektos/tap/act
-brew_install_or_upgrade docker
-brew_install_or_upgrade docker-machine
-brew_install_or_upgrade git-lfs
-brew_install_or_upgrade bluesnooze
-brew_install_or_upgrade asciinema # Record and share your terminal sessions, the simple way.
-brew_install_or_upgrade wifi-password
+brew install curl
+brew install git
+brew install git-delta
+brew install go
+brew install shellcheck
+brew install fzf
+brew install fx
+brew install coreutils
+brew install nektos/tap/act
+brew install docker
+brew install docker-machine
+brew install git-lfs
+brew install bluesnooze
+brew install asciinema # Record and share your terminal sessions, the simple way.
+brew install wifi-password
 
 # Better youtube-dl - download from youtube https://github.com/yt-dlp/yt-dlp
 brew install yt-dlp
@@ -66,21 +66,21 @@ brew install oven-sh/bun/bun
 
 
 # rust based tools
-brew_install_or_upgrade bat
-brew_install_or_upgrade exa
-brew_install_or_upgrade grex
-brew_install_or_upgrade starship
-brew_install_or_upgrade peterldowns/tap/localias
+brew install bat
+brew install exa
+brew install grex
+brew install starship
+brew install peterldowns/tap/localias
 
 # PlanetScale DB CLI
-# brew_install_or_upgrade planetscale/tap/pscale
+# brew install planetscale/tap/pscale
 
 # ffmpeg for quick video compression
 brew install ffmpeg --with-vorbis --with-libvorbis --with-vorbis --with-theora --with-libogg --with-libvorbis --with-gpl --with-version3 --with-nonfree --with-postproc --with-libaacplus --with-libass --with-libcelt --with-libfaac --with-libfdk-aac --with-libfreetype --with-libmp3lame --with-libopencore-amrnb --with-libopencore-amrwb --with-libopenjpeg --with-openssl --with-libopus --with-libschroedinger --with-libspeex --with-libtheora --with-libvo-aacenc --with-libvorbis --with-libvpx --with-libx264 --with-libxvid
 
 # *********************************
 # mac app store
-brew_install_or_upgrade mas
+brew install mas
 
 brew install neovim
 
@@ -178,6 +178,9 @@ brew install dsully/tap/macos-defaults
 
 # GNU Stow is a symlink farm manager https://www.gnu.org/software/stow/
 brew install stow
+
+# https://github.com/sharkdp/fd - A simple, fast and user-friendly alternative to find
+brew install fd
 
 # A lightweight window border system for macOS - https://github.com/FelixKratz/JankyBorders
 brew tap FelixKratz/formulae
