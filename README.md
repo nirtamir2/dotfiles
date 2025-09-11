@@ -171,3 +171,8 @@ Open popup immediately
 
 ### GNU Stow - manage symlinks better
 https://www.jakewiesler.com/blog/managing-dotfiles
+
+### Inspiration
+- Gal Schlezinger https://github.com/Schniz/dotfiles
+- Stefan Judis https://github.com/stefanjudis/dotfiles
+- Andrey Sitnik https://github.com/ai/environment
