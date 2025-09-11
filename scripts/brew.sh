@@ -67,7 +67,7 @@ brew install oven-sh/bun/bun
 
 # rust based tools
 brew install bat
-brew install exa
+brew install eza
 brew install grex
 brew install starship
 brew install peterldowns/tap/localias
