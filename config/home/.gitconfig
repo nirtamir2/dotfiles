@@ -44,6 +44,8 @@
   excludesfile = ~/.gitignore_global
   pager = delta --plus-style="syntax #195019" --minus-style="normal #601919" --paging=always
 	autocrlf = input
+  # For case-sensitive file systems (e.g. macOS default APFS) https://www.dev-diaries.com/social-posts/git-case-insensitivity/
+  ignoreCase = false
 [push]
   default = current
 [help]
