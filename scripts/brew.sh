@@ -170,8 +170,8 @@ brew install --formula lumen
 # Terminal
 brew install ghostty
 
-# OpenCode - A powerful AI coding agent. Built for the terminal. https://github.com/opencode-ai/opencode
-brew install opencode-ai/tap/opencode
+# OpenCode - A powerful AI coding agent. Built for the terminal. https://opencode.ai https://github.com/sst/opencode
+brew install sst/tap/opencode
 
 # A tool for managing macOS defaults declaratively via YAML files. https://github.com/dsully/macos-defaults
 brew install dsully/tap/macos-defaults
