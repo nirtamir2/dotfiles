@@ -203,3 +203,6 @@ source ~/completion-for-pnpm.zsh
 
 # opencode
 export PATH=/Users/nirtamir/.opencode/bin:$PATH
+
+# Added by Antigravity
+export PATH="/Users/nirtamir/.antigravity/antigravity/bin:$PATH"

@@ -163,9 +163,26 @@ brew install --cask orion
 # aerospace is a tiling window manager for macOS
 #brew install --cask nikitabobko/tap/aerospace
 
-curl -fsSL https://opencode.ai/install | zsh
-
 #iA Presenter https://ia.net/presenter
 
 # local.ai - not needed
 #docker run -p 8080:8080 --name local-ai -ti localai/localai:latest-aio-cpu
+
+# 2FA app
+brew install --cask ente-auth
+
+# OpenCode desktop app
+brew install --cask opencode-desktop
+
+# Claude Code
+brew install --cask claude-code
+
+# Claude desktop
+brew install --cask claude
+
+# Antigravity - https://antigravity.app/ Google's IDE for AI with free autocomplete and generous AI support
+brew install --cask antigravity
+
+# Show usage stats for OpenAI Codex and Claude Code, without having to login
+# https://github.com/steipete/CodexBar
+brew install --cask steipete/tap/codexbar

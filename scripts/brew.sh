@@ -182,7 +182,11 @@ brew install stow
 # https://github.com/sharkdp/fd - A simple, fast and user-friendly alternative to find
 brew install fd
 
+brew install opencode
+
 # A lightweight window border system for macOS - https://github.com/FelixKratz/JankyBorders
 brew tap FelixKratz/formulae
 brew install borders
 brew services start borders
+
+

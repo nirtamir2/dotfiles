@@ -33,6 +33,14 @@ echo 'source ~/completion-for-pnpm.zsh' >> ~/.zshrc
 printf "installing switch-branch-cli"
 pnpm install -g switch-branch-cli
 
+# # https://github.com/jinghaihan/pncat
+# printf "installing pncat - pnpm package catalog CLI"
+# pnpm install -g pncat
+
+# https://github.com/antfu/nip
+printf "installing nip - A better 'pnpm install xxx' with prompts and catalogs support."
+pnpm install -g @antfu/nip
+
 printf "installing jiragit"
 pnpm install -g @nirtamir2/jiragit
 
@@ -81,6 +89,21 @@ pnpm i -g kirimase
 # Ask LLM directly from your terminal https://github.com/egoist/shell-ask
 # git diff | ask cm
 pnpm i -g shell-ask
+
+# CLI tool to interact with Ralph Wiggum AI assistant
+pnpm install -g @th0rgal/ralph-wiggum
+
+# GitHuman - Keep the Human in the Loop of coding
+# https://github.com/mcollina/githuman
+pnpm install -g githuman
+
+# difit - A lightweight command-line tool that spins up a local web server to display Git commit diffs in a GitHub-like Files changed view 
+# https://github.com/yoshiko-pg/difit
+pnpm install -g difit
+
+
+# https://termly.dev/ - Run OpenCode from your phone
+pnpm install -g @termly-dev/cli
 
 # Installing terminal auto-completion to pnpm
 pnpm install-completion

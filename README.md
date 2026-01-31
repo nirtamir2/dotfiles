@@ -176,3 +176,4 @@ https://www.jakewiesler.com/blog/managing-dotfiles
 - Gal Schlezinger https://github.com/Schniz/dotfiles
 - Stefan Judis https://github.com/stefanjudis/dotfiles
 - Andrey Sitnik https://github.com/ai/environment
+- devnoname120 notes https://gist.github.com/devnoname120/4767a0aa18879217170fd0c68809fc24

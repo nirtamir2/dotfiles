@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# prints the value of $1 if the variable skip_$1 is not set
+function print_unless_disabled() {
+  local varname="skip_$1"
+  if [ -z "${!varname}" ]; then
+    echo "$1"
+  fi
+}
