@@ -105,6 +105,12 @@ pnpm install -g difit
 # https://termly.dev/ - Run OpenCode from your phone
 pnpm install -g @termly-dev/cli
 
+# https://www.vibekanban.com/
+# Vibe Kanban lets you run coding agents in parallel without conflicts, and perform code review through our diff tool. Now you can focus on planning and quality instead of watching terminal logs.
+pnpm install -g vibe-kanban
+
+
+
 # Installing terminal auto-completion to pnpm
 pnpm install-completion
 
