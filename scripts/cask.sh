@@ -151,6 +151,9 @@ brew install --cask google-chrome@canary
 # AltTab - Windows alt-tab on macOS https://alt-tab-macos.netlify.app/
 brew install --cask alt-tab
 
+# https://dockdoor.net/ - Effortless Alt+Tab switching and dock previews (I use AltTab instead)
+# brew install --cask dockdoor
+
 # Prevent apple music to open.
 brew install --cask notunes
 
@@ -185,4 +188,14 @@ brew install --cask antigravity
 
 # Show usage stats for OpenAI Codex and Claude Code, without having to login
 # https://github.com/steipete/CodexBar
-brew install --cask steipete/tap/codexbar
+# brew install --cask steipete/tap/codexbar 
+# I manually installed openusage https://github.com/robinebers/openusage instead
+
+# OpenAI Codex https://github.com/openai/codex
+brew install --cask codex
+
+# OpenAI's Codex desktop app for managing coding agents
+brew install --cask codex-app
+
+# A free, open source, and extensible speech-to-text application that works completely offline. https://www.handy.computer
+brew install --cask handy
