@@ -189,4 +189,5 @@ brew tap FelixKratz/formulae
 brew install borders
 brew services start borders
 
-
+# PostgreSQL client libraries, I use pg_dump command to backup prisma
+brew install libpq

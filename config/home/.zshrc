@@ -206,3 +206,5 @@ export PATH=/Users/nirtamir/.opencode/bin:$PATH
 
 # Added by Antigravity
 export PATH="/Users/nirtamir/.antigravity/antigravity/bin:$PATH"
+
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
