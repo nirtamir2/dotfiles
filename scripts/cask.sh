@@ -199,3 +199,7 @@ brew install --cask codex-app
 
 # A free, open source, and extensible speech-to-text application that works completely offline. https://www.handy.computer
 brew install --cask handy
+
+# Ghostty-based terminal with vertical tabs and notifications for AI coding agents
+# https://www.cmux.dev/
+brew install --cask cmux
