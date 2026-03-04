@@ -109,6 +109,8 @@ pnpm install -g @termly-dev/cli
 # Vibe Kanban lets you run coding agents in parallel without conflicts, and perform code review through our diff tool. Now you can focus on planning and quality instead of watching terminal logs.
 pnpm install -g vibe-kanban
 
+# Replace port numbers with stable, named .localhost URLs. For humans and agents. https://port1355.dev/
+npm install -g portless
 
 
 # Installing terminal auto-completion to pnpm
