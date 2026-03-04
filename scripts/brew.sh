@@ -191,3 +191,7 @@ brew services start borders
 
 # PostgreSQL client libraries, I use pg_dump command to backup prisma
 brew install libpq
+
+# Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows
+# worktrunk.dev
+brew install worktrunk && wt config shell install
