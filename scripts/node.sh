@@ -121,3 +121,41 @@ pnpm install-completion
 # # pnpm i -g @slidev/cli
 # # pnpm i -g license-checker
 # # pnpm i -g license-report
+pnpm install -g agent-browser
+
+
+
+pnpx skills add pbakaus/impeccable
+pnpx skills add https://github.com/vercel-labs/skills --skill find-skills
+pnpx skills add https://github.com/vercel-labs/agent-skills --skill vercel-react-best-practices
+pnpx skills add https://github.com/anthropics/skills --skill frontend-design
+pnpx skills add https://github.com/remotion-dev/skills --skill remotion-best-practices
+pnpx skills add https://github.com/vercel-labs/agent-skills --skill vercel-composition-patterns
+pnpx skills add https://github.com/anthropics/skills --skill skill-creator
+pnpx skills add https://github.com/nextlevelbuilder/ui-ux-pro-max-skill --skill ui-ux-pro-max
+pnpx skills add https://github.com/coreyhaines31/marketingskills --skill copywriting
+pnpx skills add https://github.com/vercel-labs/agent-browser --skill agent-browser
+pnpx skills add https://github.com/obra/superpowers --skill brainstorming
+pnpx skills add https://github.com/coreyhaines31/marketingskills --skill marketing-psychology
+
+pnpx skills add emilkowalski/skill
+
+pnpx skills add addyosmani/web-quality-skills
+
+pnpx skills add addyosmani/agent-skills
+
+pnpx skills add nutlope/hallmark
+
+pnpx skills add heygen-com/hyperframes
+
+pnpx skills add https://github.com/Leonxlnx/taste-skill
+
+pnpx skills add jakubkrehel/make-interfaces-feel-better
+
+pnpx skills add dietrichgebert/ponytail
+
+# Vite plus
+curl -fsSL https://vite.plus | bash
+
+# Manual:
+# https://recordly.dev/

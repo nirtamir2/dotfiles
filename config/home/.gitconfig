@@ -7,6 +7,9 @@
 [includeIf "gitdir:~/dev/youleap/"]
   path = ~/youleap.gitconfig
 
+[includeIf "gitdir:~/dev/genie-labs/"]
+  path = ~/genie-labs.gitconfig
+
 [color]
   diff = auto
   stats = auto

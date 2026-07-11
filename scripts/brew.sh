@@ -162,10 +162,9 @@ brew install screenpipe
 # brew install deskpad
 
 # lumen is a command-line tool that uses AI to generate commit messages,
-# summarise git diffs or past commits, and more without requiring an API key.
-# https://github.com/jnsahaj/lumen
-brew tap jnsahaj/lumen
-brew install --formula lumen
+# summarise git diffs or past commits. I configured it with Google
+# https://github.com/jnsahaj/lumen 
+brew install jnsahaj/lumen/lumen
 
 # Terminal
 brew install ghostty
@@ -195,3 +194,15 @@ brew install libpq
 # Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows
 # worktrunk.dev
 brew install worktrunk && wt config shell install
+
+# Docker sandbox https://docs.docker.com/ai/sandboxes/
+brew install docker/tap/sbx
+sbx login
+
+
+# Twitter local stuff
+brew install steipete/tap/birdclaw
+ 
+brew install --cask xdevplatform/tap/xurl
+brew install steipete/tap/bird
+

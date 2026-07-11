@@ -203,3 +203,15 @@ brew install --cask handy
 # Ghostty-based terminal with vertical tabs and notifications for AI coding agents
 # https://www.cmux.dev/
 brew install --cask cmux
+
+# https://apiark.dev/ - Better postman
+brew install --cask apiark
+
+# Open-source, privacy-first macOS break reminders for a calmer work rhythm
+brew tap preetsuthar17/tap
+brew install --cask knook
+
+# Stream content 
+brew install --cask stremio
+
+# brew install --cask supercmdlabs/supercmd/supercmd

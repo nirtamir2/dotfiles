@@ -210,3 +210,6 @@ export PATH="/Users/nirtamir/.antigravity/antigravity/bin:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
+
+# Vite+ bin (https://viteplus.dev)
+. "$HOME/.vite-plus/env"
