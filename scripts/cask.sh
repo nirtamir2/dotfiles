@@ -214,4 +214,19 @@ brew install --cask knook
 # Stream content 
 brew install --cask stremio
 
+# Paper - Figma alternative https://paper.design/
+brew install --cask paper-design
+
+# buzz.xyz - Chat with teammates and specialized agents in one shared space
+brew install --cask block-buzz
+
+# Local-first, agent-native design tool https://open-design.ai/
+brew install --cask open-design
+
+# Open source speech to text https://handy.computer/
+brew install --cask handy
+
 # brew install --cask supercmdlabs/supercmd/supercmd
+
+# Record and transcribe video conferences https://fathom.video/
+brew install --cask fathom

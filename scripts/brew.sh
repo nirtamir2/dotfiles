@@ -206,3 +206,10 @@ brew install steipete/tap/birdclaw
 brew install --cask xdevplatform/tap/xurl
 brew install steipete/tap/bird
 
+
+# App Store Connect API https://github.com/rorkai/App-Store-Connect-CLI
+brew install asc
+curl -fsSL https://asccli.sh/install | bash
+# In the repo that needs it:
+# asc install-skills
+

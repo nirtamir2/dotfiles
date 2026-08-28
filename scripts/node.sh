@@ -113,6 +113,8 @@ pnpm install -g vibe-kanban
 npm install -g portless
 
 
+npm install -g @agentclientprotocol/codex-acp.
+
 # Installing terminal auto-completion to pnpm
 pnpm install-completion
 
@@ -135,7 +137,7 @@ pnpx skills add https://github.com/anthropics/skills --skill skill-creator
 pnpx skills add https://github.com/nextlevelbuilder/ui-ux-pro-max-skill --skill ui-ux-pro-max
 pnpx skills add https://github.com/coreyhaines31/marketingskills --skill copywriting
 pnpx skills add https://github.com/vercel-labs/agent-browser --skill agent-browser
-pnpx skills add https://github.com/obra/superpowers --skill brainstorming
+# pnpx skills add https://github.com/obra/superpowers --skill brainstorming
 pnpx skills add https://github.com/coreyhaines31/marketingskills --skill marketing-psychology
 
 pnpx skills add emilkowalski/skill
@@ -150,10 +152,23 @@ pnpx skills add heygen-com/hyperframes
 
 pnpx skills add https://github.com/Leonxlnx/taste-skill
 
-pnpx skills add jakubkrehel/make-interfaces-feel-better
+npx skills add jakubkrehel/skills
 
 pnpx skills add dietrichgebert/ponytail
 
+# npx skills add builderio/skills
+
+pnpx skills add kentcdodds/kcd-skills
+
+pnpx skills add ayghri/i-have-adhd
+
+npx skills add https://github.com/kostja94/marketing-skills --skill twitter-x-posts
+
+npx skills add jakubkrehel/skills
+
+npx skills add https://github.com/composiohq/awesome-claude-skills --skill twitter-algorithm-optimizer
+
+npx skills add Leonxlnx/unlazy
 # Vite plus
 curl -fsSL https://vite.plus | bash
 
